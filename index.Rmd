@@ -1,0 +1,270 @@
+---
+title: "Fermented Food in Numbers"
+output: 
+  flexdashboard::flex_dashboard:
+
+    css: style.css
+    social: menu
+    source_code: embed
+    orientation: columns
+    vertical_layout: fill
+ 
+---
+```{r setup, include=FALSE}
+#------------------ Packages ------------------
+library(flexdashboard)
+library(dplyr)
+library(DT)
+library(plotly)
+library(treemap)
+library(leaflet)
+library(rnaturalearth)
+library(DT)
+library(ggplot2)
+library(rnaturalearth)
+
+#------------ Country cleanup ---------------------
+country.table <- read.csv("country.csv")
+fermentedfood <- readr::read_delim("Overview_fermented_foods_sample_50.tsv")
+fermentedfood$country_code <- as.integer(fermentedfood$country_code)
+
+fermentedfood.clean <- select(fermentedfood,Continent,country_code,Category,Product,Description,
+                                Raw_material_ontology,Raw_material_additional_information,
+                                Reference,Webpage_reference) %>%
+                            
+                            left_join(select(country.table,name,region,sub.region,country.code,alpha.3),
+                             by = c('country_code' = 'country.code'))
+
+```
+
+Map {data-orientation=rows}
+===================================== 
+
+Row {data-height=50}
+----------------------------------
+### Total number of fermented products
+```{r}
+valueBox(value = dplyr::n_distinct(fermentedfood$Product), 
+         icon = "fas fa-carrot", 
+         color = "info"
+         )
+```
+
+
+### Category 
+
+```{r}
+valueBox(value =  dplyr::n_distinct(fermentedfood$Category), 
+         icon = "fas fa-leaf", 
+         color = 'success'
+         )
+```
+
+
+### Ontology groups 
+```{r}
+valueBox(value = dplyr::n_distinct(fermentedfood$Raw_material_ontology),
+         icon = "fas fa-seedling",
+         color = 'success'
+        )
+```
+
+### Country
+
+```{r}
+valueBox(value = dplyr::n_distinct(tidyr::unnest(fermentedfood,Country)$Country),
+         icon = "fas fa-globe", 
+        )
+```
+
+Row {data-height=800}
+-----------------------------------------------------------------------
+
+###  
+```{r}
+# map polygons coordinates
+map <- ne_countries()
+names(map)[names(map) == "iso_a3_eh"] <- "ISO3"
+names(map)[names(map) == "name"] <- "NAME"
+
+# all countries iso codes
+country.table<-country.table %>% select(3:3)
+fermentedfood.agg <- na.omit(fermentedfood.clean %>% group_by(alpha.3) %>% 
+  summarise(total_count=n(),
+            .groups = 'drop'))
+
+fermentedfood.joined <- left_join(d, fermentedfood.agg, by = 'alpha.3')
+
+map$total_count <- fermentedfood.joined[match(map$ISO3, fermentedfood.joined$alpha.3),"total_count"]
+
+# palete of colors
+pal <- colorBin(palette = "viridis", domain = map$total_count,
+                bins = seq(0, max(map$total_count, na.rm = TRUE) + 2, by = 1))
+
+
+map$labels <- paste0("<strong> Country: </strong> ", map$NAME, "<br/> ",
+                     "<strong> Total count: </strong> ", map$total_count, "<br/> ") %>%
+                       lapply(htmltools::HTML)
+
+leaflet(map) %>% 
+  addTiles() %>% 
+    setView(lng = 10, lat = 40, zoom = 3) %>%
+    addPolygons(
+    fillColor = ~pal(total_count),
+    color = "white",
+    fillOpacity = 0.7,
+    label = ~labels,
+    highlight = highlightOptions(color = "black", bringToFront = TRUE)) %>%
+  leaflet::addLegend(pal = pal, values = ~total_count, opacity = 0.7, title = "FermentedFood")
+
+
+```
+
+
+Row {data-height=300}
+-----------------------------------------------------------------------
+
+
+### 
+```{r}
+fermentedfood.category <- fermentedfood %>% group_by(Category) %>% 
+  summarise(total_count=n(),.groups = 'drop') %>%
+  as.data.frame()
+
+fig <- plot_ly(fermentedfood.category, x = fermentedfood.category$Category, y = fermentedfood.category$total_count, type = 'bar',
+marker = list(color = c('rgba(222,45,38,0.8)', 'rgba(222,45,38,0.8)',
+                                'rgba(219, 64, 82, 0.7)', 'rgba(219, 64, 82, 0.7)',
+                                'rgba(219, 64, 82, 0.7)','rgba(219, 64, 82, 0.7)', 'rgba(250, 171, 96, 0.7)',
+                                'rgba(50, 171, 96, 0.7)', 'rgba(50, 171, 96, 0.7)',
+                                'rgba(50, 171, 96, 0.7)','rgba(50, 171, 96, 0.7)', 'rgba(204,204,204,1)',
+                                'rgba(204,204,204,1)', 'rgba(222,45,38,0.8)',
+                                'rgba(204,204,204,1)','rgba(204,204,204,1)'))
+
+
+        )
+
+fig
+```
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
+Graphs {data-orientation=columns}
+===================================== 
+
+Row
+-------------------------------------
+    
+### Fermented products
+    
+```{r}
+fermentedfood.category <- fermentedfood %>% group_by(Category) %>% 
+  summarise(total_count=n(),.groups = 'drop') %>%
+  as.data.frame()
+
+fig <- plot_ly(fermentedfood.category, x = fermentedfood.category$Category, y = fermentedfood.category$total_count, type = 'bar',
+marker = list(color = c('rgba(222,45,38,0.8)', 'rgba(222,45,38,0.8)',
+                                'rgba(219, 64, 82, 0.7)', 'rgba(219, 64, 82, 0.7)',
+                                'rgba(219, 64, 82, 0.7)','rgba(219, 64, 82, 0.7)', 'rgba(250, 171, 96, 0.7)',
+                                'rgba(50, 171, 96, 0.7)', 'rgba(50, 171, 96, 0.7)',
+                                'rgba(50, 171, 96, 0.7)','rgba(50, 171, 96, 0.7)', 'rgba(204,204,204,1)',
+                                'rgba(204,204,204,1)', 'rgba(222,45,38,0.8)',
+                                'rgba(204,204,204,1)','rgba(204,204,204,1)'))
+
+
+        )
+
+fig
+```
+ 
+### Chart 2
+    
+```{r}
+``` 
+### Chart 3
+```{r}
+``` 
+### Chart 4
+```{r}
+``` 
+
+Row
+-------------------------------------
+    
+### Chart 3
+    
+```{r}
+fermentedfood_agg2 <- fermentedfood %>% group_by(Category) %>% 
+  summarise(total_count=n(),.groups = 'drop') %>%
+  as.data.frame()
+
+#fig <- plot_ly(
+#  x = fermentedfood_agg2$Category,
+#  y = fermentedfood_agg2$total_count,
+
+#)
+fig <- plot_ly(fermentedfood_agg2, x = fermentedfood_agg2$Category, y = fermentedfood_agg2$total_count, type = 'bar',
+marker = list(color = c('rgba(222,45,38,0.8)', 'rgba(222,45,38,0.8)',
+                                'rgba(219, 64, 82, 0.7)', 'rgba(219, 64, 82, 0.7)',
+                                'rgba(219, 64, 82, 0.7)','rgba(219, 64, 82, 0.7)', 'rgba(250, 171, 96, 0.7)',
+                                'rgba(50, 171, 96, 0.7)', 'rgba(50, 171, 96, 0.7)',
+                                'rgba(50, 171, 96, 0.7)','rgba(50, 171, 96, 0.7)', 'rgba(204,204,204,1)',
+                                'rgba(204,204,204,1)', 'rgba(222,45,38,0.8)',
+                                'rgba(204,204,204,1)','rgba(204,204,204,1)'))
+
+
+        )
+
+fig
+```
+ 
+### Chart 4
+    
+```{r}
+``` 
+
+Data {data-orientation=rows}
+===================================== 
+```{r}
+fermentedfood.clean %>% 
+  select(Continent,region,sub.region,name,Category,Product,Description,Raw_material_ontology,Raw_material_additional_information,Reference,Webpage_reference) %>%
+  datatable(rownames = FALSE,
+                colnames = c("Continent","Region",'Subregion',"Country","Category","Product","Description","Raw_material_ontology","Raw_material_additional_information","Reference","Webpage_reference"
+),
+            options = list(searchHighlight = TRUE, 
+                           pageLength = nrow(fermentedfood)), filter = 'top')
+```
+
+About {data-orientation=rows}
+===================================== 
+**The Fermented Food Dashboard**
+
+This  provides an overview of ....
+
+**Code**
+
+The code behind this dashboard is available on [GitHub](https://github.com/bokulich-lab/GlobalFermentedFoods){target="_blank"}.
+
+
+**Data**
+
+The input data for this dashboard is the dataset available from the .....
+
+
+**Information**
+
+More information about this blbla
+
+**Update**
+
+The data is as of 
+
+
