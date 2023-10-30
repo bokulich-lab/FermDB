@@ -1,4 +1,5 @@
-label,parentMaterials,
+label,parent
+Materials,
 cereal_food,Materials
 barley,cereal_food
 buckwheat,cereal_food
