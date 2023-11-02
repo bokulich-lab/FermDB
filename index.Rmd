@@ -225,16 +225,49 @@ About {data-orientation=rows}
 ===================================== 
 **The Fermented Food Dashboard**
 
-Network visualization: In the table there are shared foods between the different countries.
-It would be useful to show a graph where the nodes are countries 
-(if possible also grouped by region, subregion, continent) and the edges are foods.
-The size of the node could be determined by its weight and all edges would be unweighted.
-If possible the user should be able to select the countries.
+Fermented food of the world integrated resource
+“A comprehensive manually curated and referenced list of fermented foods of the world.”
+The presented resource includes:
 
 
-**Contributors** 
 
-Rosanna Coda, Jan Patrick Tan
 
+
+
+* Location:
+Full country name(s), regions and subregions based on the classification provided by the Standard country or area codes for statistical use (M49) of the United Nations.
+      
+* Product (Name):
+Name in English. If available, the name in the original language is also presented.
+     
+* Description:
+Overview for a non-expert. (1) Overall description of the food (2) Particularities of the production; and (3) Particularities of location of production or geographic distribution.
+
+* Raw material ontology:
+This classification is based exclusively on raw materials on a semi-organismic level while excluding processing information.
+
+* Raw material additional information:
+Details about the raw materials that are not captured in the ontology. It includes any details related to the particularities of an ingredient.
+
+* Category:
+Each food is assigned to one general fermented food category:  acid beverage, alcoholic beverage, beer, cheese, condiment, dairy product, fermented cereal, fermented fish, fermented fruit, fermented legumes, fermented meat, fermented roots, fermented vegetables, or wine.
+
+* References:
+A valid reference from a peer-reviewed publication, book, industry handbook or official government document.
+
+* Webpage reference:
+Government website or Wikipedia webpages containing image of the fermented food.
+
+
+
+
+
+
+
+
+
+**Code**
+
+The code behind this dashboard is available on Github.
 
 
