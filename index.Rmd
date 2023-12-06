@@ -1,5 +1,5 @@
 ---
-title: "Fermented Food in Numbers"
+title: "FermDB"
 output: 
   flexdashboard::flex_dashboard:
 
@@ -21,9 +21,10 @@ library(rnaturalearth)
 library(ggplot2)
 library(readxl)
 library(tidyr)
+library(collapsibleTree)
 #------------ Country cleanup ---------------------
 country.table <- read.csv("country.csv")
-fermentedfood.new <- read_excel("FermFood_new.xlsx", .name_repair = function(x) gsub("\\s+", "_", x))
+fermentedfood.new <- read_excel("Fermented_food2.xlsx", .name_repair = function(x) gsub("\\s+", "_", x))
 
 fermentedfood.flat <- separate_longer_delim(fermentedfood.new,c(Country,Country_code),delim = ',')
 fermentedfood.flat$Country_code <- as.integer(fermentedfood.flat$Country_code)
@@ -189,23 +190,20 @@ datatable(arrange(fermentedfood.country,desc(total_count)), rownames = FALSE,opt
 Column {data-width=400}
 --------------------------------------    
 ```{r}
+df_ontology <- read.csv("Raw_ontology_table.csv")
 
-df_ontology <- read.csv('test_treemap.csv',header = TRUE)
-fig <- plot_ly(
-  type="treemap",
-  labels=df_ontology$label,
-  parents=df_ontology$parent
-)
-m <- list(
-  l = 0,
-  r = 0,
-  b = 0,
-  t = 0,
-  pad = 4
-)
-fig <- fig %>% layout(autosize = F, width = 600, height = 700,margin = m)
 
-fig
+df_ontology %>%
+  group_by(Level1,Level2,Level4) %>%
+  summarize('Total Count' = n()) %>%
+  collapsibleTreeSummary(
+    hierarchy = c( 'Level1','Level2','Level4'),
+    root = 'Materials',
+    width = 800,
+    attribute = "Total Count",
+  zoomable = FALSE
+)
+
 
 ```
 Data {data-orientation=rows}
@@ -259,8 +257,24 @@ A valid reference from a peer-reviewed publication, book, industry handbook or o
 Government website or Wikipedia webpages containing image of the fermented food.
 
 
+**Legal frameworks for the protection of regional foods**
 
+* [Protected Designation of Origin (PDO)](https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en#pdo)
 
+* [Protected Geographical Indication (PGI)](https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en#pdo)
+
+* [Traditional Speciality Guaranteed (TSG)](https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en#pdo)
+
+* [Appellation d'Origine Contrôlée (AOC)](https://www.economie.gouv.fr/particuliers/aop-aoc-igp-stg-labels-certification-alimentation#)
+
+**Disclaimers**
+
+Disclaimer on the Diversity of Fermented foods
+The FermDB does not represent the whole extension of the diversity of the foods worldwide.
+It is instead a live resource that will continue to expand with the aim of becoming one of
+the most extensively curated databases for global fermented foods.
+For each food the country of origin was determined based on the literature search,
+but it is acknowledged that other countries could be linked to a specific product. 
 
 
 
@@ -268,6 +282,23 @@ Government website or Wikipedia webpages containing image of the fermented food.
 
 **Code**
 
-The code behind this dashboard is available on Github.
+The code behind this dashboard is available on [Github](https://github.com/bokulich-lab/FermDB).
+
+
+**Contributors** 
+
+* Rodrigo Hernández Velázquez (ETH Zurich, Switzerland)
+
+* Lena Flörl (ETH Zurich, Switzerland)
+
+* Anna Greppi (ETH Zurich, Switzerland)
+
+* Rossana Coda (University of Helsinki, Finland)
+
+* Jan Patrick Tan (ETH Zurich, Switzerland)
+
+* Sara De Crescenzo (ETH Zurich, Switzerland)
+
+* Salome Häcki (ETH Zurich, Switzerland)
 
 

@@ -1,25 +1,18 @@
 {
     "Materials": {
         "cereal_food": {
-            "barley": [],
-            "buckwheat": [],
-            "corn": [
-                "white corn",
-                "yellow corn",
-                "blue corn",
-                "purple corn"
-            ],
-            "malt": [],
-            "oat": [],
-            "quinoa": [],
-            "rice": [],
-            "rye": [],
-            "sesame": [],
-            "sorghum": [],
-            "teff grain": [],
-            "triticale": [],
-            "wheat": []
+           "hordeum": ["barley"],
+           "oryza": ["rice", "red rice"],
+           "triticum": ["wheat"],
+           "secale": ["rye"],
+           "avena": ["oat"],
+           "triticosecale": ["triticale"],
+           "zea": ["white corn", "yellow corn", "blue corn", "purple corn", "corn"],
+           "sorghum": ["sorghum"],
+           "eragrostis": ["teff grain"],
+           "buckwheat": ["buckweat seed"]
         },
+
         "dairy_products": {
             "equine dairy product": [
                 "donkey",
@@ -32,15 +25,19 @@
                 "sheep milk",
                 "yak milk",
                 "cammel milk",
-                "dzo milk"
+                "dzo milk",
+                "horse milk",
+                "caribou milk"
             ],
             "whey product": []
-        },
+                          
+            },
         "eggs": {
             "amphibian egg": [],
-            "bird_egg": [],
+            "bird_egg": ["duck egg"],
             "fish_egg": [],
             "reptile egg": []
+
         },
         "fruits": {
             "aggregate fruit": [
@@ -89,7 +86,7 @@
                 "pomegranate",
                 "red currant",
                 "red grape",
-                "sacred pear",
+                "pear",
                 "sea buckthorn berry",
                 "squashberry",
                 "star fruit",
@@ -104,18 +101,22 @@
                 "white peppercorn",
                 "wood apple",
                 "apple",
-                "cucumber"
-            ],
+                "cucumber",
+                "cayenne pepper",
+                "okra"
+            ],    
+
             "capsule fruit": [
                 "coccarium capsule fruit",
                 "loculicidal capsule fruit",
                 "poricidal capsule fruit",
                 "septicidal capsule fruit"
-            ],
+            ],   
             "drupe fruit": [
                 "acerola",
                 "almond",
                 "apricot",
+                "coffee bean",
                 "arabica coffee bean",
                 "bayberry",
                 "black walnut",
@@ -140,20 +141,24 @@
                 "sumac fruit",
                 "sweet cherry",
                 "walnut",
-                "yellow plum"
-            ],
+                "yellow plum",
+                "coconut"
+            ],   
             "fruit multiple": [
                 "breadfruit",
                 "fig",
                 "jackfruit",
                 "mulberry",
-                "pineapple"
+                "pineapple",
+                "durian"
+            ],
+            "citrus fruit": [
+                "orange",
+                "lemon"
             ]
         },
-        
+
         "legumes_seeds": {
-            "alfalfa": [],
-            "bambara": [],
             "bean": [
                 "adzuki beans",
                 "broad beans",
@@ -175,7 +180,6 @@
                 "black gram bean",
                 "african locust bean"
             ],
-            "lentil": [],
             "nuts": [
                 "areca nut",
                 "bambara groundnut",
@@ -187,8 +191,8 @@
                 "pine nut",
                 "shea nut",
                 "spanish peanut",
-                "coconut"
-            ],
+                "hazelnut"
+            ],    
             "peas": [
                 "alaska pea",
                 "catjang pea",
@@ -210,7 +214,6 @@
                 "dill seed",
                 "egusi seed",
                 "fenugreek seed",
-                "corn kernel",
                 "finger millet seed",
                 "flaxseed",
                 "fruit seed",
@@ -221,17 +224,22 @@
                 "okra seed",
                 "rapeseed",
                 "river tamarind seed",
-                "seed",
                 "sunflower seed",
+                "juniper berry",
                 "vanilla bean",
                 "vetch seed",
                 "white fonio seed",
                 "locust bean",
                 "millet seed",
-                "finger millet seed",
-                "bengalgram"
+                "pearl millet seed",
+                "bengalgram",
+                "lentil",
+                "quinoa seed",
+                "sesame seed",
+                "buckwheat seed"
             ]
         },
+
         "meat": {
             "amphibian": [],
             "bird": [
@@ -239,10 +247,30 @@
                 "auk"
             ],
             "blood food product": [],
-            "crustecean": [],
-            "fish": [],
+            "crustecean": [
+                "shrimp",
+                "crab"
+            ],
+            "fish": [
+                "anchovy",
+                "bonnetmouth",
+                "trout",
+                "saithe",
+                "grass carp",
+                "common carp",
+                "silver carp",
+                "skate fish",
+                "yellowfin tuna",
+                "parrot fish",
+                "milkfish",
+                "fresh water fish"
+            ],
             "mammal": [
-                "bovine",
+                "alpaca",
+                "cattle",
+                "goat",
+                "pork",
+                "llama",
                 "deer",
                 "equine",
                 "swine",
@@ -250,13 +278,15 @@
                 "rabbit",
                 "bighorn sheep",
                 "seal",
-                "walrus"
+                "walrus",
+                "water buffalo"
             ],
             "reptile": []
         },
         "non_fruit_carbohydrates": {
             "honey": []
         },
+
         "vegetables": {
             "floret": [
                 "artichoke",
@@ -277,7 +307,10 @@
                 "gesho leaves",
                 "rhododendron leaves",
                 "leafless mistletoe leaves",
-                "magane-saag leaves"
+                "magane-saag leaves",
+                "camellia black tea leaves",
+                "camellia dark tea leaves",
+                "potherb mustard"
             ],
             "mallows plant": [
                 "roselle"
@@ -309,17 +342,27 @@
                 "turnip",
                 "tumeric",
                 "potato",
-                "radish roots"
+                "radish roots",
+                "mustard tuber", 
+                "sweet potato",
+                "garlic",
+                "ginger"
             ],
             "sap": [
                 "coconut palm sap",
-                "date palm sap"
+                "date palm sap",
+                "agave sap"
             ],
             "stem or spear vegetable": [
                 "bamboo plant",
                 "bamboo stem",
-                "sugarcane plant"
+                "sugarcane plant",
+                "buli palm stem"
+            ],
+            "flower": [
+                "artichoke flower"
             ]
+
         }
     }
 }

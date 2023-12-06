@@ -1,0 +1,366 @@
+,Country_code,Category,Product,Raw_material_ontology,Level0,Level1,Level2,Level4
+0,"['894', ' 178']",fermented_cereal,Munkoyo,corn,Materials,cereal_food,zea,corn
+1,['894'],fermented_cereal,Chibwantu,corn,Materials,cereal_food,zea,corn
+2,['204'],fermented_cereal,Mawè,corn,Materials,cereal_food,zea,corn
+3,['076'],fermented_cereal,Jamin-bang,corn,Materials,cereal_food,zea,corn
+4,['170'],alcoholic_beverage,Colombian_Champus,corn,Materials,cereal_food,zea,corn
+5,['178'],fermented_cereal,Poto_poto,corn,Materials,cereal_food,zea,corn
+6,['231'],beer,Tella,corn,Materials,cereal_food,zea,corn
+7,['288'],fermented_cereal,Banku,corn,Materials,cereal_food,zea,corn
+8,"['288', ' 384', ' 768', ' 204', ' 328', ' 388']",fermented_cereal,Kenkey,corn,Materials,cereal_food,zea,corn
+9,['356'],alcoholic_beverage,Mingiri,corn,Materials,cereal_food,zea,corn
+10,['356'],alcoholic_beverage,Lohpani,corn,Materials,cereal_food,zea,corn
+11,['356'],alcoholic_beverage,Bhangchang,corn,Materials,cereal_food,zea,corn
+12,"['356', ' 524']",alcoholic_beverage,Makai_ko_jaanr,corn,Materials,cereal_food,zea,corn
+13,['604'],fermented_roots,Tocosh,corn,Materials,cereal_food,zea,corn
+14,"['051', ' 792']",cheese,Motal,sheep_milk,Materials,dairy_products,milk,sheep_milk
+15,['100'],cheese,Tcherni_Vit_Green_Cheese,sheep_milk,Materials,dairy_products,milk,sheep_milk
+16,['191'],cheese,Pag_Island_Cheese,sheep_milk,Materials,dairy_products,milk,sheep_milk
+17,['196'],cheese,Halloumi,sheep_milk,Materials,dairy_products,milk,sheep_milk
+18,"['703', ' 642', ' 616']",cheese,Bryndza,sheep_milk,Materials,dairy_products,milk,sheep_milk
+19,['250'],cheese,Basque_Pyrenees_Mountain_Cheeses,sheep_milk,Materials,dairy_products,milk,sheep_milk
+20,['250'],cheese,Faisselle,sheep_milk,Materials,dairy_products,milk,sheep_milk
+21,['250'],cheese,Roquefort,sheep_milk,Materials,dairy_products,milk,sheep_milk
+22,['300'],cheese,Feta,sheep_milk,Materials,dairy_products,milk,sheep_milk
+23,['300'],fermented_cereal,Trahana,sheep_milk,Materials,dairy_products,milk,sheep_milk
+24,['380'],cheese,Pecorino_Romano,sheep_milk,Materials,dairy_products,milk,sheep_milk
+25,['380'],cheese,Murazzano,sheep_milk,Materials,dairy_products,milk,sheep_milk
+26,['380'],cheese,"Bros,_Bross,_Brus,_Bruss,_Bruzzo",sheep_milk,Materials,dairy_products,milk,sheep_milk
+27,['380'],cheese,Caciocavallo,sheep_milk,Materials,dairy_products,milk,sheep_milk
+28,['380'],cheese,Casu_martzu,sheep_milk,Materials,dairy_products,milk,sheep_milk
+29,['380'],cheese,Pecorino_Sardo,sheep_milk,Materials,dairy_products,milk,sheep_milk
+30,['380'],cheese,Pecorino_Siciliano,sheep_milk,Materials,dairy_products,milk,sheep_milk
+31,['380'],cheese,Pecorino_Toscano,sheep_milk,Materials,dairy_products,milk,sheep_milk
+32,"['051', ' 792']",cheese,Motal,cow_milk,Materials,dairy_products,milk,cow_milk
+33,['056'],cheese,Pas_de_Rouge,cow_milk,Materials,dairy_products,milk,cow_milk
+34,['076'],cheese,Queijo_minas,cow_milk,Materials,dairy_products,milk,cow_milk
+35,['100'],yogurt,Bulgarian_yoghurt,cow_milk,Materials,dairy_products,milk,cow_milk
+36,['108'],dairy_product,Amateregua,cow_milk,Materials,dairy_products,milk,cow_milk
+37,['108'],dairy_product,Urubu,cow_milk,Materials,dairy_products,milk,cow_milk
+38,"['643', ' 804']",dairy_product,Smetana,cow_milk,Materials,dairy_products,milk,cow_milk
+39,['196'],cheese,Halloumi,cow_milk,Materials,dairy_products,milk,cow_milk
+40,['203'],cheese,Olomouc_cheese,cow_milk,Materials,dairy_products,milk,cow_milk
+41,['208'],cheese,Dana_Blu,cow_milk,Materials,dairy_products,milk,cow_milk
+42,"['703', ' 642', ' 616']",cheese,Bryndza,cow_milk,Materials,dairy_products,milk,cow_milk
+43,['818'],dairy_product,Laban_rayeb,cow_milk,Materials,dairy_products,milk,cow_milk
+44,['818'],fermented_cereal,Egyptian_Kishk,cow_milk,Materials,dairy_products,milk,cow_milk
+45,['231'],yogurt,Ergo,cow_milk,Materials,dairy_products,milk,cow_milk
+46,['246'],cheese,Lappi,cow_milk,Materials,dairy_products,milk,cow_milk
+47,"['246', ' 752']",yogurt,Viili,cow_milk,Materials,dairy_products,milk,cow_milk
+48,['250'],cheese,Angelot,cow_milk,Materials,dairy_products,milk,cow_milk
+49,['250'],cheese,Beaufort,cow_milk,Materials,dairy_products,milk,cow_milk
+50,['250'],cheese,Bleu_de_Termignon,cow_milk,Materials,dairy_products,milk,cow_milk
+51,['250'],cheese,Brie,cow_milk,Materials,dairy_products,milk,cow_milk
+52,['250'],cheese,Camembert,cow_milk,Materials,dairy_products,milk,cow_milk
+53,['250'],cheese,Cantal,cow_milk,Materials,dairy_products,milk,cow_milk
+54,['250'],cheese,Comte,cow_milk,Materials,dairy_products,milk,cow_milk
+55,['250'],dairy_product,Creme_fraiche,cow_milk,Materials,dairy_products,milk,cow_milk
+56,['250'],cheese,Demi-sel,cow_milk,Materials,dairy_products,milk,cow_milk
+57,['250'],cheese,Faisselle,cow_milk,Materials,dairy_products,milk,cow_milk
+58,['250'],cheese,Fourme_Artisanale_de_Valcivieres,cow_milk,Materials,dairy_products,milk,cow_milk
+59,['250'],cheese,Laguiole,cow_milk,Materials,dairy_products,milk,cow_milk
+60,['250'],cheese,Mimolette_(Boule_de_Lille),cow_milk,Materials,dairy_products,milk,cow_milk
+61,['250'],cheese,Munster,cow_milk,Materials,dairy_products,milk,cow_milk
+62,['250'],cheese,Pont-l'Évêque,cow_milk,Materials,dairy_products,milk,cow_milk
+63,['250'],cheese,Port_Salut,cow_milk,Materials,dairy_products,milk,cow_milk
+64,['250'],cheese,Reblochon,cow_milk,Materials,dairy_products,milk,cow_milk
+65,['250'],cheese,Saint-Nectaire,cow_milk,Materials,dairy_products,milk,cow_milk
+66,['250'],cheese,Sant-Paulin,cow_milk,Materials,dairy_products,milk,cow_milk
+67,['250'],cheese,Tomme_de_Savoie,cow_milk,Materials,dairy_products,milk,cow_milk
+68,['268'],cheese,Sulguni,cow_milk,Materials,dairy_products,milk,cow_milk
+69,['276'],fermented_cereal,Christstollen,cow_milk,Materials,dairy_products,milk,cow_milk
+70,"['288', ' 566', ' 854']",yogurt,Nunu,cow_milk,Materials,dairy_products,milk,cow_milk
+71,['300'],fermented_cereal,Trahana,cow_milk,Materials,dairy_products,milk,cow_milk
+72,['352'],Yoghurt,Skyr,cow_milk,Materials,dairy_products,milk,cow_milk
+73,['356'],Yoghurt,Lassi,cow_milk,Materials,dairy_products,milk,cow_milk
+74,['356'],dairy_product,Shrikhand,cow_milk,Materials,dairy_products,milk,cow_milk
+75,"['356', ' 050']",dairy_product,"Misti_dahi,_Mishti_doi,_Lal_dahi,_Payodhi",cow_milk,Materials,dairy_products,milk,cow_milk
+76,['356'],dairy_product,Somar,cow_milk,Materials,dairy_products,milk,cow_milk
+77,"['356', ' 064', ' 524']",cheese,Dudh_churpi,cow_milk,Materials,dairy_products,milk,cow_milk
+78,['356'],dairy_product,"Ghee,_Gheu",cow_milk,Materials,dairy_products,milk,cow_milk
+79,"['356', ' 524']",fermented_cereal,Selroti,cow_milk,Materials,dairy_products,milk,cow_milk
+80,"['356', ' 064', ' 524', ' 156']",cheese,"Chhu,_Sheden",cow_milk,Materials,dairy_products,milk,cow_milk
+81,"['356', ' 064', ' 524', ' 156']",cheese,Chhurpi,cow_milk,Materials,dairy_products,milk,cow_milk
+82,"['004', ' 012', ' 480', ' 031', ' 050', ' 818', ' 231', ' 242', ' 356', ' 364', ' 368', ' 524', ' 586', ' 144', ' 760', ' 788', ' 792']",fermented_cereal,Jalebi,cow_milk,Materials,dairy_products,milk,cow_milk
+83,"['356', ' 524', ' 568', ' 050']",cheese,Paneer,cow_milk,Materials,dairy_products,milk,cow_milk
+84,"['356', ' 524', ' 144', ' 050', ' 568']",Yoghurt,Dahi,cow_milk,Materials,dairy_products,milk,cow_milk
+85,"['356', ' 524', ' 156']",dairy_product,Philu,cow_milk,Materials,dairy_products,milk,cow_milk
+86,['nan'],dairy_product,Buttermilk,cow_milk,Materials,dairy_products,milk,cow_milk
+87,['360'],dairy_product,Dadih,cow_milk,Materials,dairy_products,milk,cow_milk
+88,['364'],dairy_product,Doogh,cow_milk,Materials,dairy_products,milk,cow_milk
+89,"['364', ' 368', ' 268', ' 792', ' 300', ' 422', ' 807', ' 688', ' 760', ' 499', ' 070', ' 004', ' 031', ' 398', ' 586']",dairy_product,"Kaymak,_Kajmak,_Kaimak,_Gemagh,_Geymar",cow_milk,Materials,dairy_products,milk,cow_milk
+90,['372'],cheese,Durrus,cow_milk,Materials,dairy_products,milk,cow_milk
+91,['372'],cheese,Dilliskus,cow_milk,Materials,dairy_products,milk,cow_milk
+92,['372'],cheese,Gubbeen,cow_milk,Materials,dairy_products,milk,cow_milk
+93,['372'],cheese,Cashel_Blue,cow_milk,Materials,dairy_products,milk,cow_milk
+94,['372'],cheese,Milleens,cow_milk,Materials,dairy_products,milk,cow_milk
+95,['380'],cheese,Fontina_Val_D'Aosta,cow_milk,Materials,dairy_products,milk,cow_milk
+96,['380'],cheese,Montasio,cow_milk,Materials,dairy_products,milk,cow_milk
+97,['380'],cheese,Valle_D'Aosta_Fromadzo,cow_milk,Materials,dairy_products,milk,cow_milk
+98,['380'],cheese,Asiago,cow_milk,Materials,dairy_products,milk,cow_milk
+99,['380'],cheese,Burrata,cow_milk,Materials,dairy_products,milk,cow_milk
+100,['380'],cheese,Caciocavallo,cow_milk,Materials,dairy_products,milk,cow_milk
+101,['380'],cheese,Gorgonzola,cow_milk,Materials,dairy_products,milk,cow_milk
+102,['380'],cheese,Grana_Padano,cow_milk,Materials,dairy_products,milk,cow_milk
+103,['380'],cheese,Mascarpone,cow_milk,Materials,dairy_products,milk,cow_milk
+104,['056'],beer,Lambic_beer,barley,Materials,cereal_food,hordeum,barley
+105,"['356', ' 524', ' 064', ' 156']",alcoholic_beverage,Chhaang,barley,Materials,cereal_food,hordeum,barley
+106,"['233', ' 643', ' 616']",fermented_cereal,Kvass,barley,Materials,cereal_food,hordeum,barley
+107,['231'],beer,Tella,barley,Materials,cereal_food,hordeum,barley
+108,['246'],beer,Sahti,barley,Materials,cereal_food,hordeum,barley
+109,['356'],alcoholic_beverage,Mingiri,barley,Materials,cereal_food,hordeum,barley
+110,['356'],alcoholic_beverage,Lohpani,barley,Materials,cereal_food,hordeum,barley
+111,['356'],alcoholic_beverage,Bhangchang,barley,Materials,cereal_food,hordeum,barley
+112,['356'],alcoholic_beverage,Sing_sing,barley,Materials,cereal_food,hordeum,barley
+113,['356'],alcoholic_beverage,Themsing,barley,Materials,cereal_food,hordeum,barley
+114,"['356', ' 524', ' 156']",alcoholic_beverage,"Chhaang,_Chhyang,_Lugri",barley,Materials,cereal_food,hordeum,barley
+115,"['356', ' 524']",alcoholic_beverage,Jao_ko_jaanr,barley,Materials,cereal_food,hordeum,barley
+116,"['356', ' 524']",alcoholic_beverage,Raksi,barley,Materials,cereal_food,hordeum,barley
+117,['056'],beer,Lambic_beer,wheat,Materials,cereal_food,triticum,wheat
+118,['156'],alcoholic_beverage,Baijiu,wheat,Materials,cereal_food,triticum,wheat
+119,['156'],fermented_cereal,Chee-fan,wheat,Materials,cereal_food,triticum,wheat
+120,['156'],fermented_legumes,Doubanjiang,wheat,Materials,cereal_food,triticum,wheat
+121,['156'],fermented_cereal,Mantou,wheat,Materials,cereal_food,triticum,wheat
+122,['156'],fermented_cereal,Minchin,wheat,Materials,cereal_food,triticum,wheat
+123,['156'],alcoholic_beverage,Shaosingh-jiu,wheat,Materials,cereal_food,triticum,wheat
+124,['156'],fermented_vegetables,Yongfeng_chili_sauce,wheat,Materials,cereal_food,triticum,wheat
+125,['156'],fermented_legumes,Tianmianjiang,wheat,Materials,cereal_food,triticum,wheat
+126,['356'],fermented_cereal,Taotjo,wheat,Materials,cereal_food,triticum,wheat
+127,['818'],fermented_cereal,Egyptian_Kishk,wheat,Materials,cereal_food,triticum,wheat
+128,['231'],beer,Tella,wheat,Materials,cereal_food,triticum,wheat
+129,['246'],beer,Sahti,wheat,Materials,cereal_food,triticum,wheat
+130,['276'],fermented_cereal,Christstollen,wheat,Materials,cereal_food,triticum,wheat
+131,['300'],fermented_cereal,Trahana,wheat,Materials,cereal_food,triticum,wheat
+132,['356'],fermented_cereal,Kurdi,wheat,Materials,cereal_food,triticum,wheat
+133,"['356', ' 524']",alcoholic_beverage,Gahoon_ko_jaanr,wheat,Materials,cereal_food,triticum,wheat
+134,"['356', ' 524']",alcoholic_beverage,Raksi,wheat,Materials,cereal_food,triticum,wheat
+135,"['356', ' 524']",fermented_cereal,Selroti,wheat,Materials,cereal_food,triticum,wheat
+136,"['004', ' 012', ' 480', ' 031', ' 050', ' 818', ' 231', ' 242', ' 356', ' 364', ' 368', ' 524', ' 586', ' 144', ' 760', ' 788', ' 792']",fermented_cereal,Jalebi,wheat,Materials,cereal_food,triticum,wheat
+137,['620'],fermented_meat,Alheira,wheat,Materials,cereal_food,triticum,wheat
+138,['204'],alcoholic_beverage,Gowe,sorghum,Materials,cereal_food,sorghum,sorghum
+139,['204'],alcoholic_beverage,Tchoukoutou,sorghum,Materials,cereal_food,sorghum,sorghum
+140,['072'],fermented_cereal,Bogobe,sorghum,Materials,cereal_food,sorghum,sorghum
+141,['072'],fermented_cereal,Ting,sorghum,Materials,cereal_food,sorghum,sorghum
+142,['108'],alcoholic_beverage,Impeke,sorghum,Materials,cereal_food,sorghum,sorghum
+143,['156'],alcoholic_beverage,Baijiu,sorghum,Materials,cereal_food,sorghum,sorghum
+144,"['070', ' 191', ' 688', ' 807', ' 100']",fermented_vegetables,Sour_cabbage,cabbage,Materials,vegetables,head vegetable,cabbage
+145,['222'],fermented_vegetables,Curtido,cabbage,Materials,vegetables,head vegetable,cabbage
+146,['156'],fermented_vegetables,Chinese_pickles,cabbage,Materials,vegetables,head vegetable,cabbage
+147,['156'],fermented_vegetables,Meigan_cai,cabbage,Materials,vegetables,head vegetable,cabbage
+148,['156'],fermented_vegetables,Pao_cai,cabbage,Materials,vegetables,head vegetable,cabbage
+149,['156'],fermented_vegetables,Suan-cai,cabbage,Materials,vegetables,head vegetable,cabbage
+150,['276'],fermented_vegetables,Sauerkraut,cabbage,Materials,vegetables,head vegetable,cabbage
+151,['360'],fermented_vegetables,Sayur_asin,cabbage,Materials,vegetables,head vegetable,cabbage
+152,['108'],alcoholic_beverage,Isongo,cavendish_banana,Materials,fruits,berry fruit,cavendish_banana
+153,['108'],alcoholic_beverage,Urwarwa,cavendish_banana,Materials,fruits,berry fruit,cavendish_banana
+154,"['124', ' 040', ' 276']",wine,Ice_wine,grape,Materials,fruits,berry fruit,grape
+155,['250'],wine,Floc_de_Gascogne,grape,Materials,fruits,berry fruit,grape
+156,['250'],wine,Maury,grape,Materials,fruits,berry fruit,grape
+157,['250'],wine,"Sauternes,_Monbazillac",grape,Materials,fruits,berry fruit,grape
+158,"['276', ' add']",wine,Trockenbeerenauslese,grape,Materials,fruits,berry fruit,grape
+159,"['276', ' 616']",wine,Spaetlese,grape,Materials,fruits,berry fruit,grape
+160,['348'],wine,"Tokaji,_Tokaj",grape,Materials,fruits,berry fruit,grape
+161,['nan'],dairy_product,Kumis,horse,Materials,dairy_products,equine dairy product,horse
+162,['156'],alcoholic_beverage,Baijiu,rice,Materials,cereal_food,oryza,rice
+163,['156'],alcoholic_beverage,Choujiu,rice,Materials,cereal_food,oryza,rice
+164,['156'],alcoholic_beverage,Huangjiu,rice,Materials,cereal_food,oryza,rice
+165,['156'],alcoholic_beverage,Shaosingh-jiu,rice,Materials,cereal_food,oryza,rice
+166,['156'],fermented_vegetables,Yongfeng_chili_sauce,rice,Materials,cereal_food,oryza,rice
+167,"['156', ' 360']",fermented_cereal,Lao-chao,rice,Materials,cereal_food,oryza,rice
+168,['156'],fermented_cereal,Angkak,rice,Materials,cereal_food,oryza,rice
+169,['356'],fermented_cereal,Taotjo,rice,Materials,cereal_food,oryza,rice
+170,['218'],fermented_cereal,Sierra_rice,rice,Materials,cereal_food,oryza,rice
+171,['356'],fermented_legumes,Dhokla,rice,Materials,cereal_food,oryza,rice
+172,['356'],fermented_cereal,Adai,rice,Materials,cereal_food,oryza,rice
+173,['356'],fermented_cereal,Anarshe,rice,Materials,cereal_food,oryza,rice
+174,['356'],alcoholic_beverage,Poro_Apong,rice,Materials,cereal_food,oryza,rice
+175,"['356', ' 144']",fermented_cereal,Appam,rice,Materials,cereal_food,oryza,rice
+176,['356'],alcoholic_beverage,Atingba,rice,Materials,cereal_food,oryza,rice
+177,['356'],fermented_cereal,Chakuli_pitha,rice,Materials,cereal_food,oryza,rice
+178,['356'],fermented_cereal,Dosa,rice,Materials,cereal_food,oryza,rice
+179,['356'],fermented_cereal,Enduri_Pitha,rice,Materials,cereal_food,oryza,rice
+180,['356'],alcoholic_beverage,Ennog,rice,Materials,cereal_food,oryza,rice
+181,['356'],alcoholic_beverage,Jou,rice,Materials,cereal_food,oryza,rice
+182,['356'],alcoholic_beverage,Mingiri,rice,Materials,cereal_food,oryza,rice
+183,['356'],alcoholic_beverage,Lohpani,rice,Materials,cereal_food,oryza,rice
+184,['356'],alcoholic_beverage,Pona,rice,Materials,cereal_food,oryza,rice
+185,['356'],alcoholic_beverage,Ruhi,rice,Materials,cereal_food,oryza,rice
+186,['356'],fermented_cereal,Torani,rice,Materials,cereal_food,oryza,rice
+187,['356'],alcoholic_beverage,Yu,rice,Materials,cereal_food,oryza,rice
+188,['356'],alcoholic_beverage,Zu,rice,Materials,cereal_food,oryza,rice
+189,['356'],alcoholic_beverage,"Zutho,_Zhuchu",rice,Materials,cereal_food,oryza,rice
+190,"['356', ' 524', ' 156']",alcoholic_beverage,"Chhaang,_Chhyang,_Lugri",rice,Materials,cereal_food,oryza,rice
+191,"['356', ' 064', ' 524']",alcoholic_beverage,Bhaati_jaanr,rice,Materials,cereal_food,oryza,rice
+192,"['356', ' 524']",alcoholic_beverage,Raksi,rice,Materials,cereal_food,oryza,rice
+193,"['356', ' 524']",fermented_cereal,Selroti,rice,Materials,cereal_food,oryza,rice
+194,['356'],fermented_cereal,Bhattejaanr,rice,Materials,cereal_food,oryza,rice
+195,['360'],fermented_cereal,Brem,rice,Materials,cereal_food,oryza,rice
+196,['608'],fermented_fish,Balao-balao,rice,Materials,cereal_food,oryza,rice
+197,['608'],fermented_vegetables,Burong_mustala_(or_mustasa),rice,Materials,cereal_food,oryza,rice
+198,['156'],fermented_meat,Bak_kwa,swine,Materials,meat,mammal,swine
+199,['840'],fermented_meat,Pepperoni,swine,Materials,meat,mammal,swine
+200,['276'],fermented_meat,Mettwurst,swine,Materials,meat,mammal,swine
+201,['276'],fermented_meat,Northern_Hesse_Ahle_Wurscht,swine,Materials,meat,mammal,swine
+202,"['276', ' add']",fermented_meat,Teewurst,swine,Materials,meat,mammal,swine
+203,['348'],fermented_meat,Winter_salami,swine,Materials,meat,mammal,swine
+204,"['356', ' 064', ' 524', ' 156']",fermented_meat,Faak_kargyong,swine,Materials,meat,mammal,swine
+205,['380'],fermented_meat,"Capocollo,_Capicola,_Coppa",swine,Materials,meat,mammal,swine
+206,['156'],fermented_meat,Bak_kwa,cattle,Materials,meat,mammal,cattle
+207,['840'],fermented_meat,Pepperoni,cattle,Materials,meat,mammal,cattle
+208,['276'],fermented_meat,Mettwurst,cattle,Materials,meat,mammal,cattle
+209,"['276', ' add']",fermented_meat,Teewurst,cattle,Materials,meat,mammal,cattle
+210,['356'],fermented_meat,Yak_Kargyong,cattle,Materials,meat,mammal,cattle
+211,['356'],fermented_meat,Suka_ko_masu,cattle,Materials,meat,mammal,cattle
+212,"['356', ' 524']",fermented_meat,Sukakomasu,cattle,Materials,meat,mammal,cattle
+213,"['356', ' 064', ' 524', ' 156']",fermented_meat,Lang_kargyong,cattle,Materials,meat,mammal,cattle
+214,"['356', ' 064', ' 524', ' 156']",fermented_meat,Chilu,cattle,Materials,meat,mammal,cattle
+215,"['356', ' 064', ' 524', ' 156']",fermented_meat,Kheuri,cattle,Materials,meat,mammal,cattle
+216,['156'],fermented_cereal,Chee-fan,soybean,Materials,legumes_seeds,bean,soybean
+217,['156'],fermented_legumes,Furu,soybean,Materials,legumes_seeds,bean,soybean
+218,['156'],fermented_legumes,Yandou,soybean,Materials,legumes_seeds,bean,soybean
+219,['156'],fermented_vegetables,Yongfeng_chili_sauce,soybean,Materials,legumes_seeds,bean,soybean
+220,['156'],fermented_legumes,Stinky_tofu,soybean,Materials,legumes_seeds,bean,soybean
+221,['156'],fermented_legumes,Tianmianjiang,soybean,Materials,legumes_seeds,bean,soybean
+222,['156'],fermented_legumes,Meitauza,soybean,Materials,legumes_seeds,bean,soybean
+223,['356'],fermented_cereal,Taotjo,soybean,Materials,legumes_seeds,bean,soybean
+224,['356'],fermented_cereal,"Aakhone,_Axone",soybean,Materials,legumes_seeds,bean,soybean
+225,['356'],fermented_legumes,Bekang,soybean,Materials,legumes_seeds,bean,soybean
+226,['356'],fermented_legumes,Hawaijar,soybean,Materials,legumes_seeds,bean,soybean
+227,['356'],fermented_legumes,Tungrymbai,soybean,Materials,legumes_seeds,bean,soybean
+228,"['356', ' 064', ' 524']",fermented_legumes,Kinema,soybean,Materials,legumes_seeds,bean,soybean
+229,['360'],fermented_cereal,Kecap,soybean,Materials,legumes_seeds,bean,soybean
+230,['360'],fermented_legumes,Oncom,soybean,Materials,legumes_seeds,bean,soybean
+231,['156'],fermented_vegetables,Chinese_pickles,radish,Materials,vegetables,root,radish
+232,"['356', ' 064', ' 524']",fermented_vegetables,Sinki,radish,Materials,vegetables,root,radish
+233,['156'],fermented_vegetables,Chinese_pickles,mustard_seed,Materials,legumes_seeds,seeds,mustard_seed
+234,['156'],fermented_vegetables,Meigan_cai,mustard_seed,Materials,legumes_seeds,seeds,mustard_seed
+235,['356'],fermented_meat,Suka_ko_masu,mustard_seed,Materials,legumes_seeds,seeds,mustard_seed
+236,['156'],fermented_legumes,Doubanjiang,pepper,Materials,fruits,berry fruit,pepper
+237,['156'],fermented_legumes,Doubanjiang,broad_beans,Materials,legumes_seeds,bean,broad_beans
+238,['156'],alcoholic_beverage,Huangjiu,millet_seed,Materials,legumes_seeds,seeds,millet_seed
+239,"['356', ' 524', ' 064', ' 156']",alcoholic_beverage,Chhaang,millet_seed,Materials,legumes_seeds,seeds,millet_seed
+240,['050'],fermented_cereal,Thumba,millet_seed,Materials,legumes_seeds,seeds,millet_seed
+241,['818'],fermented_cereal,Boza,millet_seed,Materials,legumes_seeds,seeds,millet_seed
+242,['231'],beer,Tella,millet_seed,Materials,legumes_seeds,seeds,millet_seed
+243,"['288', ' 566']",fermented_cereal,Koko,millet_seed,Materials,legumes_seeds,seeds,millet_seed
+244,['156'],alcoholic_beverage,Lychee_wine,lychee,Materials,fruits,drupe fruit,lychee
+245,['156'],fermented_vegetables,Yongfeng_chili_sauce,cayenne_pepper,Materials,fruits,berry fruit,cayenne_pepper
+246,['156'],fermented_vegetables,Zha_cai,mustard_tuber,Materials,vegetables,root,mustard_tuber
+247,"['356', ' 524', ' 064', ' 156']",alcoholic_beverage,Chhaang,finger_millet_seed,Materials,legumes_seeds,seeds,finger_millet_seed
+248,['356'],fermented_meat,"Jamma,_Geema",finger_millet_seed,Materials,legumes_seeds,seeds,finger_millet_seed
+249,['356'],alcoholic_beverage,Bhangchang,finger_millet_seed,Materials,legumes_seeds,seeds,finger_millet_seed
+250,['356'],alcoholic_beverage,Sura,finger_millet_seed,Materials,legumes_seeds,seeds,finger_millet_seed
+251,['356'],alcoholic_beverage,Themsing,finger_millet_seed,Materials,legumes_seeds,seeds,finger_millet_seed
+252,"['356', ' 524']",fermented_meat,Arjia,finger_millet_seed,Materials,legumes_seeds,seeds,finger_millet_seed
+253,"['356', ' 524']",alcoholic_beverage,Raksi,finger_millet_seed,Materials,legumes_seeds,seeds,finger_millet_seed
+254,['196'],cheese,Halloumi,goat_milk,Materials,dairy_products,milk,goat_milk
+255,['231'],yogurt,Ergo,goat_milk,Materials,dairy_products,milk,goat_milk
+256,['250'],cheese,Picodon,goat_milk,Materials,dairy_products,milk,goat_milk
+257,['250'],cheese,Poligny_Saint_Pierre,goat_milk,Materials,dairy_products,milk,goat_milk
+258,['250'],cheese,Sainte-Maure_de_Touraine,goat_milk,Materials,dairy_products,milk,goat_milk
+259,['250'],cheese,Selles-sur-Cher,goat_milk,Materials,dairy_products,milk,goat_milk
+260,['300'],cheese,Feta,goat_milk,Materials,dairy_products,milk,goat_milk
+261,['300'],fermented_cereal,Trahana,goat_milk,Materials,dairy_products,milk,goat_milk
+262,"['356', ' 050']",dairy_product,"Misti_dahi,_Mishti_doi,_Lal_dahi,_Payodhi",goat_milk,Materials,dairy_products,milk,goat_milk
+263,['380'],cheese,Caprino_Fresco,goat_milk,Materials,dairy_products,milk,goat_milk
+264,['380'],cheese,Caprino_Stagionato,goat_milk,Materials,dairy_products,milk,goat_milk
+265,"['233', ' 643', ' 616']",fermented_cereal,Kvass,rye,Materials,cereal_food,secale,rye
+266,"['246', ' 752']",fermented_cereal,Mammi,rye,Materials,cereal_food,secale,rye
+267,['246'],beer,Sahti,rye,Materials,cereal_food,secale,rye
+268,['276'],fermented_cereal,Lebkuchen,rye,Materials,cereal_food,secale,rye
+269,"['231', ' 232', ' 706']",fermented_cereal,Injera,teff_grain,Materials,cereal_food,eragrostis,teff_grain
+270,['231'],beer,Tella,teff_grain,Materials,cereal_food,eragrostis,teff_grain
+271,['231'],yogurt,Ergo,cammel_milk,Materials,dairy_products,milk,cammel_milk
+272,['231'],beer,Tella,gesho_leaves,Materials,vegetables,leafy vegetable,gesho_leaves
+273,['246'],beer,Sahti,oat,Materials,cereal_food,avena,oat
+274,"['250', ' 724', ' 372', ' 705']",alcoholic_beverage,Cider,apple,Materials,fruits,berry fruit,apple
+275,['268'],cheese,Sulguni,buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+276,['356'],cheese,"Kalari,_Kradi",buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+277,['356'],Yoghurt,Lassi,buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+278,['356'],dairy_product,Shrikhand,buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+279,"['356', ' 050']",dairy_product,"Misti_dahi,_Mishti_doi,_Lal_dahi,_Payodhi",buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+280,['356'],dairy_product,"Ghee,_Gheu",buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+281,"['356', ' 524', ' 568', ' 050']",cheese,Paneer,buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+282,"['356', ' 524', ' 144', ' 050', ' 568']",Yoghurt,Dahi,buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+283,['360'],dairy_product,Dadih,buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+284,"['364', ' 368', ' 268', ' 792', ' 300', ' 422', ' 807', ' 688', ' 760', ' 499', ' 070', ' 004', ' 031', ' 398', ' 586']",dairy_product,"Kaymak,_Kajmak,_Kaimak,_Gemagh,_Geymar",buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+285,['380'],cheese,Mozzarella_di_Buffala,buffalo_milk,Materials,dairy_products,milk,buffalo_milk
+286,"['288', ' 768', ' 204']",fermented_roots,Agbelima,cassava_root,Materials,vegetables,root,cassava_root
+287,"['356', ' 524']",alcoholic_beverage,Raksi,cassava_root,Materials,vegetables,root,cassava_root
+288,"['356', ' 524']",alcoholic_beverage,Simal_tarul_ko_jaanr,cassava_root,Materials,vegetables,root,cassava_root
+289,"['466', ' 854']",fermented_legumes,"Sumbala,_Soumbala",locust_bean,Materials,legumes_seeds,seeds,locust_bean
+290,['288'],nan,Dawadawa,locust_bean,Materials,legumes_seeds,seeds,locust_bean
+291,['566'],fermented_legumes,Iru,locust_bean,Materials,legumes_seeds,seeds,locust_bean
+292,['304'],fermented_meat,Kiviak,auk,Materials,meat,bird,auk
+293,['304'],fermented_meat,Kiviak,seal,Materials,meat,mammal,seal
+294,['304'],fermented_fish,Igunaq,walrus,Materials,meat,mammal,walrus
+295,['356'],fermented_legumes,Dhokla,chickpea,Materials,legumes_seeds,seeds,chickpea
+296,['356'],fermented_legumes,Dhokla,bengalgram,Materials,legumes_seeds,seeds,bengalgram
+297,['356'],fermented_cereal,Khaman,bengalgram,Materials,legumes_seeds,seeds,bengalgram
+298,['352'],fermented_meat,nan,sheep,Materials,meat,mammal,sheep
+299,['356'],fermented_meat,"Jamma,_Geema",sheep,Materials,meat,mammal,sheep
+300,['356'],fermented_meat,Suka_ko_masu,sheep,Materials,meat,mammal,sheep
+301,"['356', ' 524']",fermented_meat,Arjia,sheep,Materials,meat,mammal,sheep
+302,"['356', ' 524']",fermented_meat,Sukakomasu,sheep,Materials,meat,mammal,sheep
+303,"['356', ' 064', ' 524', ' 156']",fermented_meat,Chilu,sheep,Materials,meat,mammal,sheep
+304,"['356', ' 064', ' 524', ' 156']",fermented_meat,Kheuri,sheep,Materials,meat,mammal,sheep
+305,['356'],fermented_cereal,Adai,lentil,Materials,legumes_seeds,seeds,lentil
+306,"['356', ' 104']",fermented_vegetables,Anishi,taro_leaves,Materials,vegetables,leafy vegetable,taro_leaves
+307,"['356', ' 144']",fermented_cereal,Appam,coconut,Materials,fruits,drupe fruit,coconut
+308,['360'],fermented_legumes,Oncom,coconut,Materials,fruits,drupe fruit,coconut
+309,['360'],fermented_legumes,Oncom,coconut,Materials,fruits,drupe fruit,coconut
+310,['356'],fermented_vegetables,"Bastanga,_Ekung,_Eup,_Soijim,_Soibum",bamboo_plant,Materials,vegetables,stem or spear vegetable,bamboo_plant
+311,['356'],fermented_vegetables,Ekung,bamboo_plant,Materials,vegetables,stem or spear vegetable,bamboo_plant
+312,['356'],fermented_vegetables,Hirring,bamboo_plant,Materials,vegetables,stem or spear vegetable,bamboo_plant
+313,['356'],fermented_vegetables,Soidon,bamboo_plant,Materials,vegetables,stem or spear vegetable,bamboo_plant
+314,['356'],fermented_vegetables,Tuaithur,bamboo_plant,Materials,vegetables,stem or spear vegetable,bamboo_plant
+315,['356'],fermented_vegetables,Lung-siej,bamboo_plant,Materials,vegetables,stem or spear vegetable,bamboo_plant
+316,"['356', ' 064', ' 524']",fermented_vegetables,Mesu,bamboo_plant,Materials,vegetables,stem or spear vegetable,bamboo_plant
+317,['356'],fermented_cereal,Chakuli_pitha,black_gram_bean,Materials,legumes_seeds,bean,black_gram_bean
+318,['356'],fermented_cereal,Dosa,black_gram_bean,Materials,legumes_seeds,bean,black_gram_bean
+319,['356'],fermented_cereal,Enduri_Pitha,black_gram_bean,Materials,legumes_seeds,bean,black_gram_bean
+320,"['356', ' 586', ' 050']",fermented_cereal,"Papadam,_Papadum,_Papad",black_gram_bean,Materials,legumes_seeds,bean,black_gram_bean
+321,"['004', ' 012', ' 480', ' 031', ' 050', ' 818', ' 231', ' 242', ' 356', ' 364', ' 368', ' 524', ' 586', ' 144', ' 760', ' 788', ' 792']",fermented_cereal,Jalebi,black_gram_bean,Materials,legumes_seeds,bean,black_gram_bean
+322,"['356', ' 524']",fermented_meat,Chartayshya,goat,Materials,meat,mammal,goat
+323,['356'],alcoholic_beverage,Chulli,apricot,Materials,fruits,drupe fruit,apricot
+324,['356'],alcoholic_beverage,Daru,sugarcane_plant,Materials,vegetables,stem or spear vegetable,sugarcane_plant
+325,['356'],fermented_vegetables,"Inziangsang,_Inziangdui",mustard_leaves,Materials,vegetables,leafy vegetable,mustard_leaves
+326,['608'],fermented_vegetables,Burong_mustala_(or_mustasa),mustard_leaves,Materials,vegetables,leafy vegetable,mustard_leaves
+327,['356'],fermented_cereal,Kanji,beet,Materials,vegetables,root,beet
+328,['356'],fermented_cereal,Kanji,carrot,Materials,vegetables,root,carrot
+329,['356'],alcoholic_beverage,Nareli,coconut_palm_sap,Materials,vegetables,sap,coconut_palm_sap
+330,"['608', ' 484']",alcoholic_beverage,Tuba,coconut_palm_sap,Materials,vegetables,sap,coconut_palm_sap
+331,['356'],fermented_fish,Suka_ko_maacha,tumeric,Materials,vegetables,root,tumeric
+332,['356'],fermented_meat,Suka_ko_masu,tumeric,Materials,vegetables,root,tumeric
+333,['356'],alcoholic_beverage,Tari,date_palm_sap,Materials,vegetables,sap,date_palm_sap
+334,['356'],dairy_product,Phrung,yak_milk,Materials,dairy_products,milk,yak_milk
+335,"['356', ' 064', ' 524']",dairy_product,"Pheuja,_Suja",yak_milk,Materials,dairy_products,milk,yak_milk
+336,['356'],dairy_product,Somar,yak_milk,Materials,dairy_products,milk,yak_milk
+337,"['356', ' 064', ' 524']",cheese,Dudh_churpi,yak_milk,Materials,dairy_products,milk,yak_milk
+338,"['356', ' 064', ' 524', ' 156']",cheese,"Chhu,_Sheden",yak_milk,Materials,dairy_products,milk,yak_milk
+339,"['356', ' 064', ' 524', ' 156']",cheese,Chhurpi,yak_milk,Materials,dairy_products,milk,yak_milk
+340,"['356', ' 524', ' 144', ' 050', ' 568']",Yoghurt,Dahi,yak_milk,Materials,dairy_products,milk,yak_milk
+341,"['356', ' 524', ' 156']",dairy_product,Philu,yak_milk,Materials,dairy_products,milk,yak_milk
+342,"['356', ' 524']",fermented_vegetables,Goyang,magane-saag_leaves,Materials,vegetables,leafy vegetable,magane-saag_leaves
+343,"['356', ' 064', ' 524']",fermented_vegetables,Khalpi,cucumber,Materials,fruits,berry fruit,cucumber
+344,"['356', ' 524']",alcoholic_beverage,Raksi,rhododendron_leaves,Materials,vegetables,leafy vegetable,rhododendron_leaves
+345,"['356', ' 524']",alcoholic_beverage,Raksi,leafless_mistletoe_leaves,Materials,vegetables,leafy vegetable,leafless_mistletoe_leaves
+346,"['356', ' 524']",alcoholic_beverage,Raksi,potato,Materials,vegetables,root,potato
+347,['604'],fermented_roots,Tocosh,potato,Materials,vegetables,root,potato
+348,"['356', ' 064', ' 524']",cheese,Dudh_churpi,dzo_milk,Materials,dairy_products,milk,dzo_milk
+349,['380'],wine,Amarone_della_Valpolicella,red_grape,Materials,fruits,berry fruit,red_grape
+350,['380'],condiment,Balsamic_Vinegar,red_grape,Materials,fruits,berry fruit,red_grape
+351,['380'],condiment,Balsamic_Vinegar,white_grape,Materials,fruits,berry fruit,white_grape
+352,['380'],wine,Marsala,white_grape,Materials,fruits,berry fruit,white_grape
+353,['380'],fermented_meat,Lardo,pork,Materials,meat,mammal,pork
+354,['620'],fermented_meat,Alheira,pork,Materials,meat,mammal,pork
+355,"['604', ' 068', ' 152']",fermented_meat,Ch'arki,alpaca,Materials,meat,mammal,alpaca
+356,"['604', ' 068', ' 152']",fermented_meat,Ch'arki,llama,Materials,meat,mammal,llama
+357,['608'],fermented_fish,Bagoong_terong,bonnetmouth,Materials,meat,fish,bonnetmouth
+358,['608'],fermented_fish,Balao-balao,shrimp,Materials,meat,crustecean,shrimp
+359,['608'],fermented_fish,Burong_Bangus,milkfish,Materials,meat,fish,milkfish
+360,['608'],fermented_fish,Burong_isda,red_rice,Materials,cereal_food,oryza,red_rice
+361,['840'],fermented_vegetables,Poi,taro_root,Materials,vegetables,root,taro_root
+362,['620'],fermented_meat,Alheira,chicken,Materials,meat,bird,chicken
+363,['620'],fermented_meat,Alheira,olive,Materials,fruits,drupe fruit,olive
+364,['620'],fermented_meat,Alheira,garlic,Materials,vegetables,root,garlic
