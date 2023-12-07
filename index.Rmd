@@ -302,5 +302,15 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 
 * Salome Häcki (ETH Zurich, Switzerland)
 
+* Joan Oñate Narciso (Universitat de Lleida, Spain)
+
+* Theresa Abimbola Awotundun (Ajayi Crowther University, Nigeria)
+
+* Afolake Olanbiwoninu (Ajayi Crowther University, Nigeria)
+
+* Wilfrid Padonou (Unviersité Nationale d’Agriculture, Benin)
+
+* Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
+
 
 
