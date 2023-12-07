@@ -269,6 +269,7 @@ Government website or Wikipedia webpages containing image of the fermented food.
 
 **Disclaimers**
 
+
 Disclaimer on the Diversity of Fermented foods
 The FermDB does not represent the whole extension of the diversity of the foods worldwide.
 It is instead a live resource that will continue to expand with the aim of becoming one of
@@ -311,6 +312,7 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 * Wilfrid Padonou (Unviersité Nationale d’Agriculture, Benin)
 
 * Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
+
 
 
 
