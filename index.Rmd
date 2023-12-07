@@ -285,7 +285,8 @@ but it is acknowledged that other countries could be linked to a specific produc
 The code behind this dashboard is available on [Github](https://github.com/bokulich-lab/FermDB).
 
 
-**Contributors** 
+
+**Contributors**
 
 * Rodrigo Hernández Velázquez (ETH Zurich, Switzerland)
 
@@ -300,5 +301,6 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 * Sara De Crescenzo (ETH Zurich, Switzerland)
 
 * Salome Häcki (ETH Zurich, Switzerland)
+
 
 
