@@ -10,6 +10,12 @@ output:
     vertical_layout: fill
  
 ---
+<style type="text/css">
+
+.chart-title {  /* chart_title  */
+   font-size: 18px;
+}
+</style>
 ```{r setup, include=FALSE}
 #------------------ Packages ------------------
 library(flexdashboard)
@@ -116,6 +122,7 @@ Graphs {data-orientation=columns}
 
 Column {data-width=250} 
 -------------------------------------- 
+### **Annual Global Production Volume**
 
 ### bln liters of beer in 2022
 ```{r}
@@ -156,14 +163,8 @@ valueBox(value = 22.35,
          icon = "fas fa-cheese", 
         )
 ```
-###  bln kg og yogurt in 2023
 
-```{r}
-valueBox(value = 60.5,
-         icon = "fa-solid fa-whiskey-glass", 
-        )
-```
-Column {data-width=400}
+Column {data-width=500}
 --------------------------------------    
 
 ###
@@ -208,16 +209,38 @@ df_ontology %>%
 ```
 Data {data-orientation=rows}
 ===================================== 
+
+
 ```{r}
-fermentedfood.new %>% 
-  select(Continent,Region,Subregion,Country,Category,Product,Name_in_original_language,Description,Raw_material_ontology, Webpage_reference) %>%
-  datatable(rownames = FALSE,
-                colnames = c("Continent","Region",'Subregion',"Country","Category","Product","Name_in_original_language",
-                "Description","Raw_material_ontology",  "Webpage_reference"
-),
-            options = list(searchHighlight = TRUE, 
-                           pageLength = nrow(fermentedfood)), filter = 'top')
+fermentedfood.new %>%
+          select("Continent","Region",'Subregion',"Country","Category","Product","Original_Name",
+                "Description","Raw_material", "Reference", "Webpage_reference") %>%
+  
+datatable(colnames = c("Continent","Region",'Subregion',"Country","Category","Product","Original_Name",
+                "Description","Raw_material", "Reference", "Webpage_reference"),
+         extensions = 'Buttons',
+         plugins = "ellipsis",
+         options = list( columnDefs = list(
+                      list(
+                        targets = c(8,9,10),
+                        render = JS("$.fn.dataTable.render.ellipsis( 80, false )")
+                        
+                        )),
+                       searchHighlight = TRUE,
+                       pageLength = nrow(fermentedfood.new),
+                       filter = "top",
+                       dom = 'Bfrtip',
+                       buttons = c('csv', 'copy', 'print')),
+                       
+          
+  ) 
 ```
+
+
+
+
+
+
 
 About {data-orientation=rows}
 ===================================== 
