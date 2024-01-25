@@ -1,0 +1,14 @@
+Package: FermDB
+Title: markdowntest
+Version: 0.0.1
+Imports:
+    flexdashboard,
+    dplyr,
+    DT,
+    plotly,
+    leaflet,
+    rnaturalearth,
+    ggplot2,
+    readxl,
+    tidyr,
+    collapsibleTree
