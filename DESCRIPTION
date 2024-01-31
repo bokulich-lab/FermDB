@@ -11,4 +11,4 @@ Imports:
     ggplot2,
     readxl,
     tidyr,
-    collapsibleTreeFerm
+    collapsibleTree

@@ -248,10 +248,6 @@ Fermented food of the world integrated resource
 The presented resource includes:
 
 
-
-
-
-
 * Location:
 Full country name(s), regions and subregions based on the classification provided by the Standard country or area codes for statistical use (M49) of the United Nations.
       
@@ -332,3 +328,4 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 * Wilfrid Padonou (Unviersité Nationale d’Agriculture, Benin)
 
 * Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
+
