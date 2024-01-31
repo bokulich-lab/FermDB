@@ -239,9 +239,6 @@ datatable(colnames = c("Continent","Region",'Subregion',"Country","Category","Pr
 
 
 
-
-
-
 About {data-orientation=rows}
 ===================================== 
 **The Fermented Food Dashboard**
@@ -335,7 +332,3 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 * Wilfrid Padonou (Unviersité Nationale d’Agriculture, Benin)
 
 * Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
-
-
-
-
