@@ -332,3 +332,4 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 * Wilfrid Padonou (Unviersité Nationale d’Agriculture, Benin)
 
 * Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
+* Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
