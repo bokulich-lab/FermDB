@@ -179,7 +179,7 @@ datatable(arrange(fermentedfood.category,desc(total_count)), rownames = FALSE,op
 ###
 
 ```{r}
-fermentedfood.country <- fermentedfood.new %>% group_by(Country) %>% 
+fermentedfood.country <- fermentedfood.flat %>% group_by(Country) %>% 
   summarise(total_count=n(),.groups = 'drop') %>%
   as.data.frame()
 datatable(arrange(fermentedfood.country,desc(total_count)), rownames = FALSE,options = list(dom = 't')
