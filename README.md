@@ -1,19 +1,16 @@
-# Fermented Food Ontology
-
-
-A key element of fermented foods are microorganisms that transform raw materials to create a distinct end product. For this reason, microbial composition and metabolism must be considered as key ontological features. The microbial community diversity and composition is strongly influenced by substrates that might be uniquely present in a particular geographic location.
-The **Fermented Food Ontology (FFO)** aims to provide a description of fermented foods while considering raw materials as the main drivers of microbial diversity. This ontology is based on i) [FoodON](https://foodon.org/) low-level categories and on ii) manually curated categories obtained for the foods from the curated [FermDB](https://bokulich-lab.github.io/FermDB/#data) database. We defined three ontology levels (level 1-3) to classify the categories, such levels are based exclusively on the raw materials used to elaborate the fermented foods while excluding processing information. Level 1 corresponds to broad categories of raw material and level 3 a narrow anatomical and fluid classification. This approach better elaborates on features of raw material used to produce the fermented foods while at the same time simplifying the complexity of FoodON to keep the hierarchical relationship between components of foods.
+# FermDB
 
 ## Visualization
-The Fermented Food Ontology (FOO) can be visualized interactively at https://bokulich-lab.github.io/FermDB/#graphs
+The FermDB can be explored and visualized interactively at https://bokulich-lab.github.io/FermDB
  
-## Contributing to FOO
-To suggest a new category or changes in the ontology please submit an issue in the current repository.
+## Suggesting a new fermented food or restructuring an existing entry
+To submit a new entry for the FermDB please take into consideration the following [guidelines](https://docs.google.com/document/d/1VetUibslF5FQEwTBKeWgiEPJwMq2k-zkAnUhTTcZpHo/edit?usp=sharing) and create an issue for this github repository. This [template](https://docs.google.com/spreadsheets/d/15SadRPKCl3FXqv0erFPjhznRbReGbxtU5F0H06GFYnI/edit?usp=sharing) should be used and attached for submitting a new entry(ies) or reformatting exiting ones, a valid description or motivation should be also included. If the new entry includes new ontological categories an issue should also be created for the [Fermented Food Ontology Repository](https://github.com/bokulich-lab/Fermented-Food-Ontologies).
+After submission the entry(ies) will be reviewed by the FermDB team and a decision will be made for its inclusion. The team might also require more details about individual entries, which will be then requested to the contributors. Contributors can also request to be included in the FermDB [about](https://bokulich-lab.github.io/FermDB/#about) page.
  
 ## Format
-The Fermented Food Ontology can be downloaded as a JSON file or python dictionary structure.
+The FermDB can be downloaded as a XLSX or tsv file.
  
-## Citing the FOO
-If you have used the FOO please consider citing:
+## Citing the FermDB
+If you have used the FermDB please consider citing:
 Reference
 DOI
