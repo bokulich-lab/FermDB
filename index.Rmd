@@ -313,6 +313,8 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 
 * Lena Flörl (ETH Zurich, Switzerland)
 
+* Nicholas Bokulich (ETH Zurich, Switzerland)
+
 * Anna Greppi (ETH Zurich, Switzerland)
 
 * Rossana Coda (University of Helsinki, Finland)
