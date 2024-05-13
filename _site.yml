@@ -1,2 +1,3 @@
 name: "my-website"
 output_dir: docs
+include: ["standalone_fermpage/"]

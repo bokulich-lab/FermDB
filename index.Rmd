@@ -30,7 +30,7 @@ library(tidyr)
 library(collapsibleTree)
 #------------ Country cleanup ---------------------
 country.table <- read.csv("country.csv")
-fermentedfood.new <- read_excel("Fermented_food2.xlsx", .name_repair = function(x) gsub("\\s+", "_", x))
+fermentedfood.new <- read_excel("FermDB_data.xlsx", .name_repair = function(x) gsub("\\s+", "_", x))
 
 fermentedfood.flat <- separate_longer_delim(fermentedfood.new,c(Country,Country_code),delim = ',')
 fermentedfood.flat$Country_code <- as.integer(fermentedfood.flat$Country_code)
@@ -122,7 +122,7 @@ Graphs {data-orientation=columns}
 
 Column {data-width=250} 
 -------------------------------------- 
-### **Annual Global Production Volume**
+**Annual Global Production Volume**
 
 ### bln liters of beer in 2022
 ```{r}
@@ -163,7 +163,13 @@ valueBox(value = 22.35,
          icon = "fas fa-cheese", 
         )
 ```
+### bln kg of yoghurt in 2023
 
+```{r}
+valueBox(value = 60.5,
+         icon = "fa-solid fa-whiskey-glass", 
+        )
+```
 Column {data-width=500}
 --------------------------------------    
 
@@ -230,13 +236,11 @@ datatable(colnames = c("Continent","Region",'Subregion',"Country","Category","Pr
                        pageLength = nrow(fermentedfood.new),
                        filter = "top",
                        dom = 'Bfrtip',
-                       buttons = c('csv', 'copy', 'print')),
+                       buttons = c('excel', 'copy', 'print')),
                        
           
   ) 
 ```
-
-
 
 
 About {data-orientation=rows}
