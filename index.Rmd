@@ -242,6 +242,12 @@ datatable(colnames = c("Continent","Region",'Subregion',"Country","Category","Pr
   ) 
 ```
 
+Explorer
+=======================================================================
+
+```{=html}
+<iframe src="standalone_fermpage/index.html" style='height: 100%; width: 100%;' frameBorder='0'></iframe>
+```
 
 About {data-orientation=rows}
 ===================================== 

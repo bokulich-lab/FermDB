@@ -67,8 +67,9 @@ class mapBarVis {
         // same wrangleData as mapVis, since linked
         let vis = this
 
-        let fermByCountry = Array.from(d3.group(vis.fermData, d => d.Country), ([key, value]) => ({key, value}))
+        let fermByCountry = Array.from(d3.group(vis.fermData, d => d.Country_code), ([key, value]) => ({key, value}))
 
+        // console.log(vis.fermData)
         // init final data structure in which both data sets will be merged into
         vis.countryInfo = []
         vis.selectableFoods = []
@@ -77,16 +78,18 @@ class mapBarVis {
             let fermsOfThisCat = 0;
             let allFerms = 0;
 
-            let currName = d.properties.name;
 
+            let currName = d.properties.name;
+            let currID = d.id;
             let currCountry = fermByCountry.filter((x) => {
-                return x.key === currName;
+                return x.key === currID;
             })[0];
 
             if (currCountry == null) {
                 // populate the final data structure
                 vis.countryInfo.push(
                     {
+                        ID: currID,
                         country: currName,
                         allFerms: allFerms,
                         fermsOfThisCat: fermsOfThisCat,
@@ -103,6 +106,7 @@ class mapBarVis {
                 })
                 vis.countryInfo.push(
                     {
+                        ID: currID,
                         country: currName,
                         allFerms: allFerms,
                         fermsOfThisCat: fermsOfThisCat,
@@ -126,6 +130,7 @@ class mapBarVis {
 
                 vis.countryInfo.push(
                     {
+                        ID: currID,
                         country: currName,
                         allFerms: allFerms,
                         fermsOfThisCat: fermsOfThisCat,
@@ -166,6 +171,7 @@ class mapBarVis {
             .on("mouseover", function(event, d) {
                 selectedCountry = d.country;
                 let currData = []
+                let selectedID = d.ID;
 
                 vis.countryInfo.forEach(country =>{
                     if (selectedCountry === country.country){
@@ -173,7 +179,7 @@ class mapBarVis {
                     }
                 })
 
-                d3.selectAll(`.${selectedCountry.replaceAll(' ', '-')}-country`)
+                d3.selectAll(`.country-${selectedID}`)
                     .attr("fill", d => {
                         let color = " ";
 
@@ -200,7 +206,6 @@ class mapBarVis {
                      <div>
                      <h3> ${currData.country}<h3>
                      <h4> Number of ${selectedFood}: ${currData.fermsOfThisCat}</h4>
-                     </div>\`
                      </div>`
                     );
 
@@ -211,7 +216,6 @@ class mapBarVis {
                      <div >
                      <h3> ${currData.country}<h3>
                      <h4> Total Products: ${currData.allFerms}</h4>
-                     </div>\`
                      </div>`
                         )
                 }
@@ -224,8 +228,9 @@ class mapBarVis {
             // set the color back to what it was
             .on('mouseout', function(event, d){
                 selectedCountry = d.country;
+                let selectedID = d.ID;
 
-                d3.selectAll(`.${selectedCountry.replaceAll(' ', '-')}-country`)
+                d3.selectAll(`.country-${selectedID}`)
                     .attr("fill", d => {
                         let countryName = selectedCountry;
                         let color = " ";
@@ -254,13 +259,17 @@ class mapBarVis {
 
             // on click, update dendrogram and make sure text hidden
             .on('click', function(event,d){
-                selectedCountryLink = d.country;
+                // console.log(d)
+                selectedCountryLink = d.ID;
+                selectedCountryName = d.country;
+
                 myDendroVis.wrangleData();
             })
             .transition()
             .duration(1000)
             .attr("class", d => {
-                return `${d.country.replaceAll(' ', '-')}-country`
+
+                return `country-${d.ID}`
             })
             .attr("x", d => vis.x(d.country))
             .attr("y", d => vis.y(d.fermsOfThisCat))

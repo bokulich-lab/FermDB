@@ -24,7 +24,6 @@ class dendroVis {
 
         vis.g = vis.space.append("g").attr("transform", "translate(60,0)");
 
-
         // prepare functions for data later
         vis.cluster = d3.cluster()
             .size([vis.height, vis.width - vis.width/3]);
@@ -32,17 +31,17 @@ class dendroVis {
         vis.stratify = d3.stratify()
             .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
 
-
-        selectedCountryLink = "India";
+        selectedCountryLink = "356";
+        selectedCountryName = "India";
         vis.wrangleData()
     }
 
     wrangleData() {
         let vis = this;
 
-        vis.filteredData1 = vis.dataDendro.filter((word) => word.id.startsWith(selectedCountryLink))
+        vis.filteredData1 = vis.dataDendro.filter((word) => word.id.includes(selectedCountryLink))
+        // console.log(selectedCountryLink)
 
-        // filter data for category
         if (selectedFood === "all") {
             vis.filteredData = vis.filteredData1
         } else {
@@ -78,7 +77,7 @@ class dendroVis {
             .attr("y", "4vh")
             .attr("background-color", "#FCF5E5")
             .style("text-anchor", "left")
-            .text(selectedCountryLink)
+            .text(selectedCountryName)
 
         vis.space.append("text")
             .attr("class", "dendroSubText")

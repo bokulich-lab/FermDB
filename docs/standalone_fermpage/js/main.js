@@ -13,7 +13,6 @@ let mode = 'beg';
 let selectedFood = d3.select("#categorySelector").property("value");
 let selectedCountry = '';
 
-
 // load data
 let promises = [
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"), // 0
@@ -52,12 +51,13 @@ function categoryChange() {
 function initMainPage(dataArray) {
     // console.log('check out the data', dataArray);
     selectedCountryLink = '';
+    selectedCountryName = '';
 
     // init map
     myMapVis = new MapVis('mapDiv', dataArray[0], dataArray[1]);
     // init top 10 graph
     myBarVisOne = new mapBarVis('barplotDiv',  dataArray[0], dataArray[1]);
-    // init dendrogram
+    // // init dendrogram
     myDendroVis = new dendroVis('dendroDiv', dataArray[2]);
 }
 
