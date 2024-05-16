@@ -256,7 +256,7 @@ About {data-orientation=rows}
 Fermented food of the world integrated resource
 “A comprehensive manually curated and referenced list of fermented foods of the world.”
 The presented resource includes:
-
+<br>
 
 * Location:
 Full country name(s), regions and subregions based on the classification provided by the Standard country or area codes for statistical use (M49) of the United Nations.
@@ -281,7 +281,7 @@ A valid reference from a peer-reviewed publication, book, industry handbook or o
 
 * Webpage reference:
 Government website or Wikipedia webpages containing image of the fermented food.
-
+<br>
 
 **Legal frameworks for the protection of regional foods**
 
@@ -292,6 +292,7 @@ Government website or Wikipedia webpages containing image of the fermented food.
 * [Traditional Speciality Guaranteed (TSG)](https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en#pdo)
 
 * [Appellation d'Origine Contrôlée (AOC)](https://www.economie.gouv.fr/particuliers/aop-aoc-igp-stg-labels-certification-alimentation#)
+<br>
 
 **Disclaimers**
 
@@ -303,7 +304,7 @@ the most extensively curated databases for global fermented foods.
 For each food the country of origin was determined based on the literature search,
 but it is acknowledged that other countries could be linked to a specific product. 
 
-
+<br>
 
 
 
@@ -311,7 +312,7 @@ but it is acknowledged that other countries could be linked to a specific produc
 
 The code behind this dashboard is available on [Github](https://github.com/bokulich-lab/FermDB).
 
-
+<br>
 
 **Contributors**
 
