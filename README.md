@@ -1,4 +1,14 @@
-# FermDB
+# 🧀 FermDB 
+> “A comprehensive manually curated and referenced list of fermented foods of the world.”
+
+[![Dashboard Badge](https://img.shields.io/badge/Interactive-Dashboard-blue?style=flat&link=https%3A%2F%2Fbokulich-lab.github.io%2FFermDB%2F)](https://bokulich-lab.github.io/FermDB/)
+[![FFO Badge](https://img.shields.io/badge/FFO-Fermented%20Food%20Ontology-green?style=flat&logo=github)](https://github.com/bokulich-lab/Fermented-Food-Ontologies)
+[![FermDB license badge](https://img.shields.io/badge/FermDB%20License-CC%20BY%204.0-blue?style=flat)](https://github.com/bokulich-lab/FermDB/blob/main/LICENSE_database.txt)
+[![Dashboard  license badge](https://img.shields.io/badge/Dashboard%20License-BSD%203%20Clause-blue?style=flat)](https://github.com/bokulich-lab/FermDB/blob/main/LICENSE)
+
+
+
+<br>
 
 ## Visualization
 The FermDB can be explored and visualized interactively at https://bokulich-lab.github.io/FermDB
