@@ -40,10 +40,11 @@ After submission the entry(ies) will be reviewed by the FermDB team and a decisi
 
  
 ## Format
-The FermDB can be downloaded as a XLSX or tsv file.
+The FermDB can be downloaded as a [XLSX](https://github.com/bokulich-lab/FermDB/blob/main/FermDB_data.xlsx) or tsv file.
 
 ##  Copyright
-The FermDB and associated information (FermDB_data.xlsx) is released under a CC BY 4.0 license.
+- The FermDB and associated information (FermDB_data.xlsx) is released under a CC BY 4.0 license.
+- The Dashboard used fo visualizing and exploring the FermDB is released under a BSD 3-Clause license.
 
 ## Citing the FermDB
 If you have used the FermDB please consider citing:
