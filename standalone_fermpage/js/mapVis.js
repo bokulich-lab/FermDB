@@ -57,7 +57,11 @@ class MapVis {
             .data(vis.world)
             .enter().append("path")
             .attr("stroke","rgb(255,255,255)")
-            .attr("class", d => `${d.properties.name.replaceAll(' ', '-')}-country country`)
+            // .attr("class", d => `${d.properties.name.replaceAll(' ', '-')}-country country`)
+            .attr("class", function (d){
+                // console.log(d.id)
+                return `country-${d.id} country`
+            })
             .attr("d", vis.path);
 
         // Make the map draggable
@@ -122,8 +126,9 @@ class MapVis {
 
     wrangleData() {
         let vis = this
-        let fermByCountry = Array.from(d3.group(vis.fermData, d => d.Country), ([key, value]) => ({key, value}))
+        let fermByCountry = Array.from(d3.group(vis.fermData, d => d.Country_code), ([key, value]) => ({key, value}))
 
+        // console.log(vis.fermData)
         // init final data structure in which both data sets will be merged into
         vis.countryInfo = []
         vis.selectableFoods = []
@@ -133,9 +138,9 @@ class MapVis {
             let allFerms = 0;
 
             let currName = d.properties.name;
-
+            let currID = d.id;
             let currCountry = fermByCountry.filter((x) => {
-                return x.key === currName;
+                return x.key === currID;
             })[0];
 
             if (currCountry == null) {
@@ -205,7 +210,6 @@ class MapVis {
             .duration(1000)
             .attr("opacity", "0.7")
             .attr("fill", d => {
-                // console.log(d.properties.name)
                 let countryName = d.properties.name;
                 let color = " ";
 
@@ -230,6 +234,8 @@ class MapVis {
             // highlight on mouseover and link bar
             .on('mouseover', function(event, d){
                 selectedCountry = d.properties.name;
+                let selectedID = d.id;
+                // console.log(selectedCountry, selectedID)
 
                 let currData = []
 
@@ -239,7 +245,7 @@ class MapVis {
                     }
                 })
 
-                d3.selectAll(`.${selectedCountry.replaceAll(' ', '-')}-country`)
+                d3.selectAll(`.country-${selectedID}`)
                     .attr("fill", d => {
 
                         let color = " ";
@@ -249,11 +255,6 @@ class MapVis {
                                 color = vis.colorScale(country.fermsOfThisCat)
                             }
                         })
-
-                        /*                        if(typeof color !== "undefined")
-                                                {
-                                                    vis.hovColor = color
-                                                }*/
 
                         if (currData.allFerms !== 0){
                             return '#2680E3'
@@ -272,7 +273,6 @@ class MapVis {
                      <div >
                      <h3> ${currData.country}<h3>
                      <h4> Number of ${selectedFood}: ${currData.fermsOfThisCat}</h4>
-                     </div>\`
                      </div>`
                     );
                 if (selectedFood === "all"){
@@ -282,7 +282,6 @@ class MapVis {
                      <div >
                      <h3> ${currData.country}<h3>
                      <h4> Total Products: ${currData.allFerms}</h4>
-                     </div>\`
                      </div>`
                         )
                 }
@@ -294,7 +293,9 @@ class MapVis {
 
             // set the color back to what it was
             .on('mouseout', function(event, d){
-                d3.selectAll(`.${selectedCountry.replaceAll(' ', '-')}-country`)
+                let selectedID = d.id;
+
+                d3.selectAll(`.country-${selectedID}`)
                     .attr("fill", d => {
                         let countryName = selectedCountry;
                         let color = " ";
@@ -323,12 +324,9 @@ class MapVis {
 
             // update dendro on click
             .on('click', function(event,d){
-                selectedCountryLink = d.properties.name;
-                // let seeDendro = document.getElementById("hidingDendro");
-                // seeDendro.removeAttribute("hidden");
+                selectedCountryLink = d.id;
+                selectedCountryName = d.properties.name;
 
-                // let hideText = document.getElementById("hideExplanation")
-                // hideText.setAttribute("hidden", "hidden");
                 myDendroVis.wrangleData();
             })
 
@@ -346,7 +344,7 @@ class MapVis {
         vis.legend.selectAll("rect").remove();
 
 
-        console.log(colorStops, numTicks);
+        // console.log(colorStops, numTicks);
         // Draw the colormap
         vis.legend.selectAll("rect")
             .data(colorStops)
@@ -359,7 +357,7 @@ class MapVis {
             .attr("fill", d => vis.colorScale(d))
             .transition();
 
-        console.log( vis.legend)
+        // console.log( vis.legend)
         // call axes
         vis.axisScale.domain([1, currMax])
         vis.axis.scale(vis.axisScale);
