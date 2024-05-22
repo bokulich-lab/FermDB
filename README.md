@@ -1,5 +1,5 @@
 # 🧀 FermDB 
-> “A comprehensive manually curated and referenced list of fermented foods of the world.”
+> “A manually curated and referenced list of traditional fermented foods of the world.”
 
 [![Dashboard Badge](https://img.shields.io/badge/Interactive-Dashboard-blue?style=flat&link=https%3A%2F%2Fbokulich-lab.github.io%2FFermDB%2F)](https://bokulich-lab.github.io/FermDB/)
 [![FFO Badge](https://img.shields.io/badge/FFO-Fermented%20Food%20Ontology-green?style=flat&logo=github)](https://github.com/bokulich-lab/Fermented-Food-Ontologies)
