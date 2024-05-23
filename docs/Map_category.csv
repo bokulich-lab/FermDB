@@ -6,6 +6,7 @@
 3,yoghurt,Nunu,288
 3,yoghurt,Nunu,566
 3,yoghurt,Nunu,854
+4,yoghurt,Ayran,nan
 5,yoghurt,Skyr,352
 6,yoghurt,Lassi,356
 7,yoghurt,Dahi,356
@@ -13,7 +14,7 @@
 7,yoghurt,Dahi,144
 7,yoghurt,Dahi,050
 7,yoghurt,Dahi,568
-8,wine,Schilfwein,040
+8,wine,Schilfwein,40
 9,wine,Icewine,124
 10,wine,Floc de Gascogne,250
 11,wine,Maury,250
@@ -21,7 +22,7 @@
 13,wine,Sauternes,250
 14,wine,Monbazillac,250
 15,wine,Trockenbeerenauslese,276
-15,wine,Trockenbeerenauslese,040
+15,wine,Trockenbeerenauslese,40
 16,wine,Spaetlese,276
 16,wine,Spaetlese,616
 17,wine,Eiswein,276
@@ -32,6 +33,7 @@
 21,wine,Vin Santo,380
 22,wine,Madeira,620
 23,wine,Sherry,724
+24,wine,Wine,nan
 25,fermented vegetables,Sour cabbage,070
 25,fermented vegetables,Sour cabbage,191
 25,fermented vegetables,Sour cabbage,688
@@ -162,6 +164,7 @@
 110,fermented legumes,Tianmianjiang,156
 111,fermented legumes,Meitauza,156
 112,fermented legumes,Douzhi,156
+113,fermented legumes,Soy sauce,nan
 114,fermented legumes,Meju,404
 115,fermented legumes,Cheonggukjang,404
 116,fermented legumes,Doenjang,404
@@ -194,6 +197,8 @@
 134,fermented fruit,Olives,152
 134,fermented fruit,Olives,380
 134,fermented fruit,Olives,300
+135,fermented fruit,Cacao,nan
+136,fermented fruit,Coffee,nan
 137,fermented fruit,Nata de pina,608
 138,fermented fruit,Lambanog,608
 139,fermented fish,Prahok,116
@@ -264,10 +269,10 @@
 182,fermented cereal,Jalebi,760
 182,fermented cereal,Jalebi,788
 182,fermented cereal,Jalebi,792
-183,fermented cereal,Thumba,050
+183,fermented cereal,Thumba,50
 184,fermented cereal,Mawè,204
-185,fermented cereal,Bogobe,072
-186,fermented cereal,Ting,072
+185,fermented cereal,Bogobe,72
+186,fermented cereal,Ting,72
 187,fermented cereal,Jamin-bang,76
 188,fermented cereal,Ben-saalga,854
 189,fermented cereal,Mahewu,710
@@ -358,9 +363,11 @@
 254,dairy product,Amateregua,108
 255,dairy product,Urubu,108
 256,dairy product,Amavuta,108
+257,dairy product,Nono,nan
 258,dairy product,Laban rayeb,818
 259,dairy product,Piima,246
 260,dairy product,Creme fraiche,250
+261,dairy product,Buttermilk,nan
 262,dairy product,Chaas,356
 263,dairy product,Phrung,356
 264,dairy product,Somar,356
@@ -436,15 +443,15 @@
 291,cheese,"Urdha, Urda, Vurda, Orda, Izvara, Zsendice",804
 292,cheese,"Motal Paniri, Panire Khiki, Panire Pousti",051
 292,cheese,"Motal Paniri, Panire Khiki, Panire Pousti",792
-293,cheese,Bregenzerwalder Mountain Cheese,040
-294,cheese,Montafoner Suure Kees,040
-295,cheese,Glundner cheese,040
-296,cheese,Ennstaler Steirerkas,040
+293,cheese,Bregenzerwalder Mountain Cheese,40
+294,cheese,Montafoner Suure Kees,40
+295,cheese,Glundner cheese,40
+296,cheese,Ennstaler Steirerkas,40
 297,cheese,Tiroler Graukase,040
 297,cheese,Tiroler Graukase,380
-298,cheese,Pas de Rouge,056
-299,cheese,Herve,056
-300,cheese,Queijo minas,076
+298,cheese,Pas de Rouge,56
+299,cheese,Herve,56
+300,cheese,Queijo minas,76
 301,cheese,Requeson,076
 301,cheese,Requeson,484
 301,cheese,Requeson,858
@@ -585,7 +592,8 @@
 419,cheese,Monterey Jack,840
 420,cheese,Queijo Serra da Estrela,620
 421,cheese,Serpa,620
-422,beer,Lambic beer,056
+422,beer,Lambic beer,56
+423,beer,Busaa,nan
 424,beer,Pito,566
 424,beer,Pito,288
 425,beer,Tella,231
@@ -598,7 +606,7 @@
 429,alcoholic beverage,Chhaang,524
 429,alcoholic beverage,Chhaang,064
 429,alcoholic beverage,Chhaang,156
-430,alcoholic beverage,Krautinger,040
+430,alcoholic beverage,Krautinger,40
 431,alcoholic beverage,Gowe,204
 432,alcoholic beverage,Tchoukoutou,204
 433,alcoholic beverage,Impeke,108
@@ -671,6 +679,7 @@
 482,alcoholic beverage,Blaand,826
 482,alcoholic beverage,Blaand,578
 482,alcoholic beverage,Blaand,352
+483,alcoholic beverage,Mead,nan
 484,alcoholic beverage,Sima,246
 485,alcoholic beverage,"Gahoon ko jaanr, Gahun ko jaanr",356
 485,alcoholic beverage,"Gahoon ko jaanr, Gahun ko jaanr",524
@@ -681,5 +690,6 @@
 487,alcoholic beverage,Kodo ko jaanr,064
 487,alcoholic beverage,Kodo ko jaanr,156
 488,alcoholic beverage,Basi,608
+489,acid beverage,Kombucha,nan
 490,fermented vegetables,Abacha,566
 491,other,Telur Asin,360

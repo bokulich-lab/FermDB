@@ -155,9 +155,37 @@ class mapBarVis {
         // update domains
         vis.x.domain(vis.topEightData.map(d => d.country));
         vis.y.domain([0, d3.max(vis.topEightData, d => d.fermsOfThisCat)]);
+        // Assume you update your y scale domain based on the data
+        let domain = vis.y.domain();
+        let range = domain[1] - domain[0];
+  
+        // Define the number of desired ticks and calculate the interval
+        const desiredTicks = 5;
+        let interval = Math.ceil(range / desiredTicks);
+  
+        // Generate preliminary tick values
+        let tickValues = [];
+        for (let i = domain[0]; i <= domain[1]; i += interval) {
+              tickValues.push(Math.floor(i));
+        }
+  
+        // Check the last tick for proximity to the domain's max
+        const lastTick = tickValues[tickValues.length - 1];
+        if (domain[1] - lastTick < interval * 0.3) {  // Example threshold: 30% of interval
+              tickValues.pop();  // Remove the last tick if it's too close to the max
+          }
+        tickValues.push(domain[1]);  // Always include the max value explicitly
+  
+        // Apply custom tick values to the yAxis
+        vis.yAxis
+              .tickFormat(d3.format("d"))
+              .tickValues(tickValues);
+  
+  
+        vis.yAxis.tickFormat(d3.format("d"));
 
         // update color scale
-        vis.colorScale.domain([0, d3.max(vis.countryInfo, d => d.fermsOfThisCat)]);
+        vis.colorScale.domain([1, d3.max(vis.countryInfo, d => d.fermsOfThisCat)]);
 
         // append bars
         vis.bars = vis.svg.selectAll('rect')

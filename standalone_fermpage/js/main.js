@@ -6,6 +6,8 @@
 let myMapVis,
     myBarVisOne,
     categoryNames,
+    selectedCountryLink,
+    selectedCountryName,
     myDendroVis;
 
 let mode = 'beg';

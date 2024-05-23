@@ -54,7 +54,7 @@ id
 388
 392
 398
-040
+40
 404
 410
 422
@@ -69,10 +69,10 @@ id
 496
 498
 499
-050
+50
 524
 528
-056
+56
 562
 566
 568
@@ -91,11 +91,11 @@ id
 705
 706
 710
-072
+72
 724
 752
 756
-076
+76
 760
 764
 768
@@ -111,6 +111,7 @@ id
 858
 860
 894
+nan
 004.dairy product
 004.fermented cereal
 008.cheese
@@ -268,9 +269,9 @@ id
 392.fermented legumes
 392.fermented vegetables
 398.dairy product
-040.alcoholic beverage
-040.cheese
-040.wine
+40.alcoholic beverage
+40.cheese
+40.wine
 404.alcoholic beverage
 404.dairy product
 404.fermented cereal
@@ -408,6 +409,14 @@ id
 858.cheese
 860.dairy product
 894.fermented cereal
+nan.acid beverage
+nan.alcoholic beverage
+nan.beer
+nan.dairy product
+nan.fermented fruit
+nan.fermented legumes
+nan.wine
+nan.yoghurt
 "004.dairy product.Kaymak, Kajmak, Kaimak, Gemagh, Geymar"
 004.fermented cereal.Jalebi
 008.cheese.Kashkaval
@@ -837,13 +846,13 @@ id
 "398.dairy product.Chal, Shuba,Khoormog"
 "398.dairy product.Kaymak, Kajmak, Kaimak, Gemagh, Geymar"
 398.dairy product.Kumis
-040.alcoholic beverage.Krautinger
-040.cheese.Bregenzerwalder Mountain Cheese
-040.cheese.Ennstaler Steirerkas
-040.cheese.Glundner cheese
-040.cheese.Montafoner Suure Kees
-040.wine.Schilfwein
-040.wine.Trockenbeerenauslese
+40.alcoholic beverage.Krautinger
+40.cheese.Bregenzerwalder Mountain Cheese
+40.cheese.Ennstaler Steirerkas
+40.cheese.Glundner cheese
+40.cheese.Montafoner Suure Kees
+40.wine.Schilfwein
+40.wine.Trockenbeerenauslese
 404.alcoholic beverage.Ewhaju
 404.dairy product.Maziwa lala
 404.fermented cereal.Chongju
@@ -875,7 +884,7 @@ id
 496.dairy product.Kumis
 "498.cheese.Urdha, Urda, Vurda, Orda, Izvara, Zsendice"
 "499.dairy product.Kaymak, Kajmak, Kaimak, Gemagh, Geymar"
-050.fermented cereal.Thumba
+50.fermented cereal.Thumba
 524.alcoholic beverage.Bhaati jaanr
 524.alcoholic beverage.Chhaang
 "524.alcoholic beverage.Chhaang, Chhyang, Lugri"
@@ -911,9 +920,9 @@ id
 528.cheese.Gouda
 528.cheese.Kanterkaas
 528.cheese.Nagelkaas
-056.beer.Lambic beer
-056.cheese.Herve
-056.cheese.Pas de Rouge
+56.beer.Lambic beer
+56.cheese.Herve
+56.cheese.Pas de Rouge
 562.fermented meat.Kilishi
 566.alcoholic beverage.Agadagidi
 566.alcoholic beverage.Burukutu
@@ -1008,8 +1017,8 @@ id
 705.dairy product.Kislo mleko
 706.fermented cereal.Injera
 710.fermented cereal.Mahewu
-072.fermented cereal.Bogobe
-072.fermented cereal.Ting
+72.fermented cereal.Bogobe
+72.fermented cereal.Ting
 724.alcoholic beverage.Cider
 724.cheese.Idiazabal
 724.cheese.Mahon
@@ -1031,8 +1040,8 @@ id
 756.cheese.Vacherin Fribourgeois
 756.cheese.Vacherin Mont-d'Or
 756.fermented meat.Bündnerfleisch
-076.cheese.Queijo minas
-076.fermented cereal.Jamin-bang
+76.cheese.Queijo minas
+76.fermented cereal.Jamin-bang
 "760.dairy product.Kaymak, Kajmak, Kaimak, Gemagh, Geymar"
 760.fermented cereal.Jalebi
 764.fermented vegetables.Miang
@@ -1089,3 +1098,13 @@ id
 "860.dairy product.Chal, Shuba,Khoormog"
 894.fermented cereal.Chibwantu
 894.fermented cereal.Munkoyo
+nan.acid beverage.Kombucha
+nan.alcoholic beverage.Mead
+nan.beer.Busaa
+nan.dairy product.Buttermilk
+nan.dairy product.Nono
+nan.fermented fruit.Cacao
+nan.fermented fruit.Coffee
+nan.fermented legumes.Soy sauce
+nan.wine.Wine
+nan.yoghurt.Ay
