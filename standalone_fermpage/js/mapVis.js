@@ -98,8 +98,8 @@ class MapVis {
         vis.colorScale = d3.scaleSequential(d3.interpolateViridis);
 
         /* * * * * * * instantiate legend * * * * * * */
-        vis.colormapWidth = vis.width /3;
-        vis.colormapHeight = 25;
+        vis.colormapWidth = vis.width /4;
+        vis.colormapHeight = vis.height/40;
 
         // Create an axis scale
         vis.axisScale = d3.scaleLinear()
@@ -112,13 +112,13 @@ class MapVis {
         vis.legend = vis.legendSVG.append("g")
             .attr('class', 'legend')
             .attr("opacity", "0.7")
-            .attr('transform', `translate(${100}, ${25 })`)
+            .attr('transform', `translate(${100}, ${50 })`)
 
         vis.legendSVG.append("g")
             .attr('class', 'x-axis')
             .style("font-family", "Poppins")
             .style("font-size", "1em")
-            .attr("transform", `translate(${100}, ${50})`);
+            .attr("transform", `translate(${100}, ${75})`);
 
 
         vis.wrangleData()
@@ -202,7 +202,7 @@ class MapVis {
 
         // update color scale
         let currMax = d3.max(vis.countryInfo, d => d.fermsOfThisCat);
-        vis.colorScale.domain([0,currMax]);
+        vis.colorScale.domain([1,currMax]);
 
         // color countries
         vis.countries
@@ -215,7 +215,7 @@ class MapVis {
 
                 vis.countryInfo.forEach(country =>{
                     if (countryName === country.country){
-                        if (country.allFerms === 0){
+                        if (country.fermsOfThisCat === 0){
                             color = "#DCDCDC"
                         }
                         else{
@@ -256,7 +256,7 @@ class MapVis {
                             }
                         })
 
-                        if (currData.allFerms !== 0){
+                        if (currData.fermsOfThisCat !== 0){
                             return '#2680E3'
                         }
                         else{
@@ -302,7 +302,7 @@ class MapVis {
 
                         vis.countryInfo.forEach(country =>{
                             if (countryName === country.country){
-                                if (country.allFerms === 0){
+                                if (country.fermsOfThisCat === 0){
                                     color = "#DCDCDC"
                                 }
                                 else{
@@ -331,36 +331,37 @@ class MapVis {
             })
 
         // Generate a series of color stops to represent the colormap
-        const numStops = Math.max(2, Math.min(8, currMax)); // Ensure at least 2 stops and maximum of 8 stops
-        const step = currMax / (numStops - 1); // Calculate the step size
-        const colorStops = d3.range(0, currMax + step, step); // Generate the color stops
+        //const numStops = Math.max(2, Math.min(8, currMax)); // Ensure at least 2 stops and maximum of 8 stops
+        //const step = currMax / (numStops - 1); // Calculate the step size
+        //const tickValues = d3.range(1, currMax + step, step).map(d => Math.round(d * 100) / 100);
+        // Set the domain for the axis scale
+        //vis.axisScale.domain([1, currMax]);    
 
-        // Inside updateVis() or wherever you need to change the number of ticks
-        const numTicks =Math.min(8, colorStops.length)
+        // Update the axis with the calculated tick values
+        //vis.axis.scale(vis.axisScale)
+        //    .ticks(numStops)
+        //    .tickValues(tickValues) // Ensure ticks are set at these values
+        //    .tickFormat(d3.format("d")); // Format the ticks to one decimal place
+        // Update the axis
+        //vis.legendSVG.select(".x-axis")
+        //    .transition()
+         //   .duration(1000)
+        //    .call(vis.axis);    
 
-    // Update the axis with the new tick values
-        vis.axis.ticks(numTicks);
 
-        vis.legend.selectAll("rect").remove();
+        //vis.legend.selectAll("rect").remove();
 
 
-        // console.log(colorStops, numTicks);
         // Draw the colormap
-        vis.legend.selectAll("rect")
-            .data(colorStops)
-            .enter()
-            .append("rect")
-            .attr("x", (d, i) => i * (vis.colormapWidth / colorStops.length))
-            .attr("y", 0)
-            .attr("width", vis.colormapWidth / colorStops.length)
-            .attr("height", vis.colormapHeight)
-            .attr("fill", d => vis.colorScale(d))
-            .transition();
-
-        // console.log( vis.legend)
-        // call axes
-        vis.axisScale.domain([1, currMax])
-        vis.axis.scale(vis.axisScale);
-        vis.legendSVG.select(".x-axis").transition().duration(1000).call(vis.axis);
-    }
+       //vis.legend.selectAll("rect")
+        //    .data(tickValues)
+        //    .enter()
+        //    .append("rect")
+        //    .attr("x", d => vis.axisScale(d) - (vis.colormapWidth / numStops / 2))
+        //    .attr("y", 0)
+        //    .attr("width", vis.colormapWidth / numStops)
+        //    .attr("height", vis.colormapHeight)
+        //    .attr("fill", d => vis.colorScale(d))
+        //    .transition();
+    }        
 }
