@@ -6,7 +6,7 @@
 [![FermDB license badge](https://img.shields.io/badge/FermDB%20License-CC%20BY%204.0-blue?style=flat)](https://github.com/bokulich-lab/FermDB/blob/main/LICENSE_database.txt)
 [![Dashboard  license badge](https://img.shields.io/badge/Dashboard%20License-BSD%203%20Clause-blue?style=flat)](https://github.com/bokulich-lab/FermDB/blob/main/LICENSE)
 
-
+![Map figure](Figure1-map.png)
 <br>
 
 ## 🌎 Visualization
