@@ -1,6 +1,7 @@
 # 🧀 FermDB 
 > “A manually curated and referenced list of traditional fermented foods of the world.”
 
+[![Publication Badge](https://img.shields.io/badge/Publication-Trends_in_Food_Science_%26_Technology-red?style=flat)](https://doi.org/10.1016/j.tifs.2024.104569)
 [![Dashboard Badge](https://img.shields.io/badge/Interactive-Dashboard-blue?style=flat&link=https%3A%2F%2Fbokulich-lab.github.io%2FFermDB%2F)](https://bokulich-lab.github.io/FermDB/)
 [![FFO Badge](https://img.shields.io/badge/FFO-Fermented%20Food%20Ontology-green?style=flat&logo=github)](https://github.com/bokulich-lab/Fermented-Food-Ontologies)
 [![FermDB license badge](https://img.shields.io/badge/FermDB%20License-CC%20BY%204.0-blue?style=flat)](https://github.com/bokulich-lab/FermDB/blob/main/LICENSE_database.txt)
@@ -51,5 +52,11 @@ The FermDB can be downloaded as a [XLSX](https://github.com/bokulich-lab/FermDB/
 
 ## ✒️ Citing the FermDB
 If you have used the FermDB please consider citing:
-Reference
-DOI
+
+```
+Hernández-Velázquez, R., Flörl, L., Lavrinienko, A., Sebechlebská, Z., Merk, L., Greppi, A., & Bokulich, N. A. (2024).
+The future is fermented: Microbial biodiversity of fermented foods is a critical resource for food innovation and human health.
+Trends in Food Science & Technology, 150, 104569. doi.org/10.1016/j.tifs.2024.104569
+```
+
+[![Publication Badge](https://img.shields.io/badge/Publication-Trends_in_Food_Science_%26_Technology-red?style=flat)](https://doi.org/10.1016/j.tifs.2024.104569)
