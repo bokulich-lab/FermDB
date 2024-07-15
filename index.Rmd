@@ -1,5 +1,7 @@
 ---
 title: "FermDB"
+encoding: UTF-8
+
 output: 
   flexdashboard::flex_dashboard:
 
@@ -26,13 +28,18 @@ library(leaflet)
 library(rnaturalearth)
 library(ggplot2)
 library(readxl)
+library(readr)
+
 library(tidyr)
 library(collapsibleTree)
 #------------ Country cleanup ---------------------
 country.table <- read.csv("country.csv")
-fermentedfood.new <- read_excel("FermDB_data.xlsx", .name_repair = function(x) gsub("\\s+", "_", x))
+fermentedfood.new_test <- read_tsv("FermDB_data.tsv", col_names = TRUE, locale = locale(encoding = "UTF-8")) 
+names(fermentedfood.new_test) <- gsub("\\s+", "_", names(fermentedfood.new_test))
 
-fermentedfood.flat <- separate_longer_delim(fermentedfood.new,c(Country,Country_code),delim = ',')
+
+fermentedfood.flat <- separate_longer_delim(fermentedfood.new_test,c(Country,Country_code),delim = ',')
+
 fermentedfood.flat$Country_code <- as.integer(fermentedfood.flat$Country_code)
 
 ```
@@ -44,21 +51,24 @@ Row {data-height=50}
 ----------------------------------
 ### Total number of fermented products
 ```{r}
-valueBox(value = dplyr::n_distinct(fermentedfood.new$Product), 
+valueBox(value = dplyr::n_distinct(fermentedfood.new_test$Product), 
+
          icon = "fas fa-carrot", 
          color = "info"
          )
 ```
 ### Ontological Categories 
 ```{r}
-valueBox(value =  dplyr::n_distinct(fermentedfood.new$Category), 
+valueBox(value =  dplyr::n_distinct(fermentedfood.new_test$Category), 
+
          icon = "fas fa-leaf", 
          color = 'success'
          )
 ```
 ### Ontology groups 
 ```{r}
-valueBox(value = dplyr::n_distinct(fermentedfood.new$Raw_material_ontology),
+valueBox(value = dplyr::n_distinct(fermentedfood.new_test$Raw_material_ontology),
+
          icon = "fas fa-seedling",
          color = 'success'
         )
@@ -176,7 +186,8 @@ Column {data-width=500}
 ###
 
 ```{r}
-fermentedfood.category <- fermentedfood.new %>% group_by(Category) %>% 
+fermentedfood.category <- fermentedfood.new_test %>% group_by(Category) %>% 
+
   summarise(total_count=n(),.groups = 'drop') %>%
   as.data.frame()
 datatable(arrange(fermentedfood.category,desc(total_count)), rownames = FALSE,options = list(dom = 't')
@@ -218,7 +229,8 @@ Data {data-orientation=rows}
 
 
 ```{r}
-fermentedfood.new %>%
+fermentedfood.new_test %>%
+
           select("Continent","Region",'Subregion',"Country","Category","Product","Original_Name",
                 "Description","Raw_material", "Reference", "Webpage_reference") %>%
   
@@ -233,7 +245,8 @@ datatable(colnames = c("Continent","Region",'Subregion',"Country","Category","Pr
                         
                         )),
                        searchHighlight = TRUE,
-                       pageLength = nrow(fermentedfood.new),
+                       pageLength = nrow(fermentedfood.new_test),
+
                        filter = "top",
                        dom = 'Bfrtip',
                        buttons = c('excel', 'copy', 'print')),
