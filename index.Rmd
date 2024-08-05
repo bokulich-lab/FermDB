@@ -327,7 +327,7 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 
 * Nicholas Bokulich (ETH Zurich, Switzerland)
 
-* Till Bauknecht (ETH Zurich, Switzerland)
+* Till Bauknecht (ETH Zurich, Switzerland) 
 
 * Anna Greppi (ETH Zurich, Switzerland)
 
@@ -349,4 +349,4 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 
 * Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
 
-* Charlotte Lambert (ETH Zurich, Switzerland)
+* Charlotte Lambert (ETH Zurich, Switzerland) 
