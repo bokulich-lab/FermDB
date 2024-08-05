@@ -27,13 +27,12 @@ library(plotly)
 library(leaflet)
 library(rnaturalearth)
 library(ggplot2)
-library(readxl)
 library(readr)
-
 library(tidyr)
 library(collapsibleTree)
 #------------ Country cleanup ---------------------
-country.table <- read.csv("country.csv")
+country.table <- read.csv("country_new.csv", sep = ';', header = TRUE)
+
 fermentedfood.new_test <- read_tsv("FermDB_data.tsv", col_names = TRUE, locale = locale(encoding = "UTF-8")) 
 names(fermentedfood.new_test) <- gsub("\\s+", "_", names(fermentedfood.new_test))
 
@@ -57,7 +56,7 @@ valueBox(value = dplyr::n_distinct(fermentedfood.new_test$Product),
          color = "info"
          )
 ```
-### Ontological Categories 
+### Fermented Food Categories 
 ```{r}
 valueBox(value =  dplyr::n_distinct(fermentedfood.new_test$Category), 
 
@@ -65,7 +64,7 @@ valueBox(value =  dplyr::n_distinct(fermentedfood.new_test$Category),
          color = 'success'
          )
 ```
-### Ontology groups 
+### Ontological Categories 
 ```{r}
 valueBox(value = dplyr::n_distinct(fermentedfood.new_test$Raw_material_ontology),
 
@@ -88,8 +87,8 @@ Row {data-height=800}
 ```{r}
 
 fermentedfood.country <- select(fermentedfood.flat,Country_code,Product) %>%
-                              left_join(select(country.table,name,region,sub.region,country.code,alpha.3),
-                             by = c('Country_code' = 'country.code'))
+                              left_join(select(country.table,Country.or.Area,Region.Name,Sub.region.Name,M49.Code,ISO.alpha3.Code),
+                             by = c('Country_code' = 'M49.Code'))
 
 # map polygons coordinates
 map <- ne_countries()
@@ -97,14 +96,14 @@ names(map)[names(map) == "iso_a3_eh"] <- "ISO3"
 names(map)[names(map) == "name"] <- "NAME"
 
 # all countries iso codes
-country.table<-country.table %>% select(3:3)
-fermentedfood.agg <- na.omit(fermentedfood.country %>% group_by(alpha.3) %>% 
+country.table<-country.table %>% select(12:12)
+fermentedfood.agg <- na.omit(fermentedfood.country %>% group_by(ISO.alpha3.Code) %>% 
   summarise(total_count=n(),
             .groups = 'drop'))
 
-fermentedfood.joined <- left_join(country.table, fermentedfood.agg, by = 'alpha.3')
+fermentedfood.joined <- left_join(country.table, fermentedfood.agg, by = 'ISO.alpha3.Code')
 
-map$total_count <-fermentedfood.joined[match(map$ISO3, fermentedfood.joined$alpha.3),"total_count"]
+map$total_count <-fermentedfood.joined[match(map$ISO3, fermentedfood.joined$ISO.alpha3.Code),"total_count"]
 # palete of colors
 pal <- colorBin(palette = 'viridis', domain = map$total_count,
                 bins = seq(0, max(map$total_count, na.rm = TRUE) +15, by = 10))
