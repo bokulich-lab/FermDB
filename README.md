@@ -32,7 +32,7 @@ To submit a new entry for the FermDB please take into consideration the followin
 
 - **Raw material additional information** : Details about the raw materials that are not captured in the ontology. It can include any details related to the particularities of an ingredient. For example, type of animal or plant, species, variety, etc.
 
-- **Category** : The category should be assigned to one of the following: acid beverage, alcoholic beverage, beer, cheese, condiment, dairy product, fermented cereal, fermented fish, fermented fruit, fermented legumes, fermented meat, fermented roots, fermented vegetables, or wine.
+- **Category** : The category should be assigned to one of the following: acid beverage, alcoholic beverage, beer, cheese, dairy product, fermented cereal, fermented fish, fermented fruit, fermented legumes, fermented meat, fermented roots, fermented vegetables, or wine.
 
 - **References**: A valid reference from a peer-reviewed publication, gov websites, books, industrial manual. The reference has to be recorded in APA format.
 
