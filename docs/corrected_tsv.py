@@ -104,7 +104,6 @@ ontologies = df_grouped['Raw material ontology'].unique()
 
 
 
-
 df_grouped.to_csv('FermDB_data.tsv', sep='\t', encoding='utf-8', index=False)
 
 
