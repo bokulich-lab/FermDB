@@ -25,7 +25,8 @@ jobs:
 
       - name: Install R dependencies
         run: |
-          install.packages('readr')
+          run: |
+            Rscript -e 'install.packages("readr", repos = "http://cran.rstudio.com")'
       
       - name: Render Rmarkdown files and Commit Results
         run: |
