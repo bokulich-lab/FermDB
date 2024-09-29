@@ -351,4 +351,3 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 
 * Charlotte Lambert (ETH Zurich, Switzerland) 
 
-* Charlotte Lambert (ETH Zurich, Switzerland) 
