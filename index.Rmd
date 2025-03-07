@@ -338,6 +338,8 @@ The code behind this dashboard is available on [Github](https://github.com/bokul
 
 * Afolake Olanbiwoninu (Ajayi Crowther University, Nigeria)
 
+* Marcel Houngbedji (Unviersité Nationale d’Agriculture, Benin)
+
 * Wilfrid Padonou (Unviersité Nationale d’Agriculture, Benin)
 
 * Sengchanh Kounnavong (Lao Tropical & Public Health Institute, Lao PDR)
